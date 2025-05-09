@@ -14,6 +14,8 @@ navlinkE1.forEach(link =>{
     link.addEventListener('click',()=>{
         sliderE1.classList.toggle('left-[0]')
         menuiconE1.classList.toggle('ri-close-large-line')
+
+        
         
     })
 })

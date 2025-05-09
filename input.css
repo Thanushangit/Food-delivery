@@ -13,3 +13,20 @@
 .container{
     @apply mx-auto p-3.5
 }
+
+@keyframes moveY {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.7rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.free-delivery-animation {
+  animation: moveY 2s linear infinite;
+  color: #fea115;
+}
