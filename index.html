@@ -153,7 +153,7 @@
             </p>
             
               <a href=""
-              class="flex items-center justify-center gap-2 py-3 px-4 outline-0 rounded-md bg-primary cursor-pointer duration-300 hover:bg-emerald-800 font-semibold w-full sm:w-fit text-xl text-center">
+              class="flex items-center justify-center gap-2 py-3 px-4 outline-0 rounded-md bg-primary cursor-pointer duration-300 hover:bg-emerald-800 font-semibold w-full sm:w-fit text-xl text-center mb-5">
               Order Now
               <span><i class="fa-solid fa-arrow-right fa-beat"></i></span>
             </a>
@@ -210,197 +210,327 @@
       <div class="container">
         <h1 class="text-2xl md:text-3xl lg:text-4xl mb-5 sm:mb-8 font-bold font-ibm">Populer Dishes</h1>
         <div class="grid grid-rows-1 w-full">
-           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-x-5 gap-y-10">
+           <div class="grid grid-cols-2 md:grid-cols-3 mb-5 lg:grid-cols-4 xl:grid-cols-6 gap-2 md:gap-x-5 gap-y-7 md:gap-y-10">
 
             <!-- item 1 -->
             <div class="border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative" title="Taste. Smile. Repeat. 😋">
-                <div class="h-1/3 w-auto "><img class="h-full w-full object-cover" src="https://cdn.britannica.com/98/235798-050-3C3BA15D/Hamburger-and-french-fries-paper-box.jpg" alt=""></div>
+                <div class="h-1/3 w-auto overflow-hidden"><img class="h-full w-full object-cover transform hover:scale-110 duration-500 transition" src="https://cdn.britannica.com/98/235798-050-3C3BA15D/Hamburger-and-french-fries-paper-box.jpg" alt=""></div>
                 <div class="p-2 flex flex-col mb-2 h-2/3">
-                  <div class="flex items-center justify-between">
+                  <div class="flex flex-col relative">
                     <h2 class="font-semibold text-lg font-cascadia">Pasta</h2>
                     <h5 class="font-bold text-xl text-primary">RS:-625</h5>
+                    <p>Versatile Italian pasta made from durum wheat in various shapes.</p>
+                     <button class="absolute h-7 w-7 md:h-10 md:w-10 top-0 right-0 rounded-full bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition" title="Order Now">+</button>
                   </div>
-                  <div class="mb-15"> 
-
-                    <p>Versatile Italian dish made from durum wheat, available in various shapes like penne, spaghetti, and fusilli</p>
-                  </div>
-                  <button class="absolute bottom-2 left-1/2 transform -translate-x-1/2 whitespace-nowrap w-auto py-2 px-4 rounded-md bg-primary outline-0 font-bold text-white mt-2 hover:border-2 hover:border-primary hover:bg-transparent hover:text-black cursor-pointer duration-300 transition" title="Order Now">Add to Cart</button>
                 </div>
             </div>
 
-             <!-- item 2 -->
-            <div class="border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative" title="Taste. Smile. Repeat. 😋">
-                <div class="h-1/3 w-auto "><img class="h-full w-full object-cover" src="https://cdn.shopify.com/s/files/1/0274/9503/9079/files/TomatoRicotta-_Resized_7d8f3685-8c73-4d77-9f08-5eee0147eb05.jpg?v=1723657379" alt=""></div>
-                <div class="p-2 flex flex-col mb-2 h-2/3">
-                  <div class="flex items-center justify-between">
-                    <h2 class="font-semibold text-lg font-cascadia">Pizza</h2>
-                    <h5 class="font-bold text-xl text-primary">RS:-1500</h5>
-                  </div>
-                  <div class="mb-15">
-                    <p>Italian flatbread topped with tomato sauce, cheese, and various toppings like pepperoni, vegetables, or seafood.</p>
-                  </div>
-                  <button class="absolute bottom-2 left-1/2 transform -translate-x-1/2 whitespace-nowrap w-auto py-2 px-4 rounded-md bg-primary outline-0 font-bold text-white mt-2 hover:border-2 hover:border-primary hover:bg-transparent hover:text-black cursor-pointer duration-300 transition" title="Order Now">Add to Cart</button>
-                </div>
-            </div>
-            
-             <!-- item 3 -->
-            <div class="border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative" title="Taste. Smile. Repeat. 😋">
-                <div class="h-1/3 w-auto "><img class="h-full w-full object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_2Evgu-K4Rqq9Vb9EHXT9BJkRYtoszlIHSQ&s" alt=""></div>
-                <div class="p-2 flex flex-col mb-2 h-2/3">
-                  <div class="flex items-center justify-between">
-                    <h2 class="font-semibold text-lg font-cascadia">Burger</h2>
-                    <h5 class="font-bold text-xl text-primary">RS:-1,200</h5>
-                  </div>
-                  <div class="mb-15">
-                    <p>A sandwich consisting of a cooked patty, usually beef or chicken, placed inside a sliced bun.</p>
-                     </div>
-                  <button class="absolute bottom-2 left-1/2 transform -translate-x-1/2 whitespace-nowrap w-auto py-2 px-4 rounded-md bg-primary outline-0 font-bold text-white mt-2 hover:border-2 hover:border-primary hover:bg-transparent hover:text-black cursor-pointer duration-300 transition" title="Order Now">Add to Cart</button>
-                </div>
-            </div>
+            <!-- item 2 -->
+<div
+  class="border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative"
+  title="Taste. Smile. Repeat. 😋"
+>
+  <div class="h-1/3 w-auto overflow-hidden">
+    <img
+      class="h-full w-full object-cover transform hover:scale-110 duration-500 transition"
+      src="https://cdn.shopify.com/s/files/1/0274/9503/9079/files/TomatoRicotta-_Resized_7d8f3685-8c73-4d77-9f08-5eee0147eb05.jpg?v=1723657379"
+      alt=""
+    />
+  </div>
+  <div class="p-2 flex flex-col mb-2 h-2/3">
+    <div class="flex flex-col relative">
+      <h2 class="font-semibold text-lg font-cascadia">Pizza</h2>
+      <h5 class="font-bold text-xl text-primary">RS:-1500</h5>
+      <p>Italian flatbread with tomato, cheese, and assorted savory toppings.</p>
+      <button
+        class="absolute h-7 w-7 md:h-10 md:w-10 top-0 right-0 rounded-full bg-primary outline-0 font-bold text-white hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800 cursor-pointer duration-300 transition"
+        title="Order Now"
+      >
+        +
+      </button>
+    </div>
+  </div>
+</div>
 
-             <!-- item 4 -->
-            <div class="border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative" title="Taste. Smile. Repeat. 😋">
-                <div class="h-1/3 w-auto "><img class="h-full w-full object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-hWxsVQ5xhruYEzcdzQ_smmEHd91cGQhAlw&s" alt=""></div>
-                <div class="p-2 flex flex-col mb-2 h-2/3">
-                  <div class="flex items-center justify-between">
-                    <h2 class="font-semibold text-lg font-cascadia">Sushi</h2>
-                    <h5 class="font-bold text-xl text-primary">RS:-2,650</h5>
-                  </div>
-                  <div class="mb-15"> 
+<!-- item 3 -->
+<div
+  class="border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative"
+  title="Taste. Smile. Repeat. 😋"
+>
+  <div class="h-1/3 w-auto overflow-hidden">
+    <img
+      class="h-full w-full object-cover transform hover:scale-110 duration-500 transition"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_2Evgu-K4Rqq9Vb9EHXT9BJkRYtoszlIHSQ&s"
+      alt=""
+    />
+  </div>
+  <div class="p-2 flex flex-col mb-2 h-2/3">
+    <div class="flex flex-col relative">
+      <h2 class="font-semibold text-lg font-cascadia">Burger</h2>
+      <h5 class="font-bold text-xl text-primary">RS:-1,200</h5>
+      <p>Grilled beef patty with lettuce, tomatoes, cheese, and toasted bun.
+</p>
+      <button
+        class="absolute h-7 w-7 md:h-10 md:w-10 top-0 right-0 rounded-full bg-primary outline-0 font-bold text-white hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800 cursor-pointer duration-300 transition"
+        title="Order Now"
+      >
+        +
+      </button>
+    </div>
+  </div>
+</div>
 
-                    <p>Japanese dish featuring vinegared rice accompanied by various ingredients like seafood, vegetables, and occasionally tropical fruits.</p>
-                  </div>
-                  <button class="absolute bottom-2 left-1/2 transform -translate-x-1/2 whitespace-nowrap w-auto py-2 px-4 rounded-md bg-primary outline-0 font-bold text-white mt-2 hover:border-2 hover:border-primary hover:bg-transparent hover:text-black cursor-pointer duration-300 transition" title="Order Now">Add to Cart</button>
-                </div>
-            </div>
+<!-- item 4 -->
+<div
+  class="border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative"
+  title="Taste. Smile. Repeat. 😋"
+>
+  <div class="h-1/3 w-auto overflow-hidden">
+    <img
+      class="h-full w-full object-cover transform hover:scale-110 duration-500 transition"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-hWxsVQ5xhruYEzcdzQ_smmEHd91cGQhAlw&s"
+      alt=""
+    />
+  </div>
+  <div class="p-2 flex flex-col mb-2 h-2/3">
+    <div class="flex flex-col relative">
+      <h2 class="font-semibold text-lg font-cascadia">Sushi</h2>
+      <h5 class="font-bold text-xl text-primary">RS:-2,650</h5>
+      <p>Japanese rice dish with seafood, vegetables, and fruits.
+</p>
+      <button
+        class="absolute h-7 w-7 md:h-10 md:w-10 top-0 right-0 rounded-full bg-primary outline-0 font-bold text-white hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800 cursor-pointer duration-300 transition"
+        title="Order Now"
+      >
+        +
+      </button>
+    </div>
+  </div>
+</div>
 
-             <!-- item 5 -->
-            <div class="border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative" title="Taste. Smile. Repeat. 😋">
-                <div class="h-1/3 w-auto "><img class="h-full w-full object-cover" src="https://www.thefoodinmybeard.com/wp-content/uploads/2009/11/wpt10-500x375.jpg" alt=""></div>
-                <div class="p-2 flex flex-col mb-2 h-2/3">
-                  <div class="flex items-center justify-between">
-                    <h2 class="font-semibold text-lg font-cascadia">Tacos</h2>
-                    <h5 class="font-bold text-xl text-primary">RS:-700</h5>
-                  </div>
-                  <div class="mb-15"> 
+<!-- item 5 -->
+<div
+  class="border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative"
+  title="Taste. Smile. Repeat. 😋"
+>
+  <div class="h-1/3 w-auto overflow-hidden">
+    <img
+      class="h-full w-full object-cover transform hover:scale-110 duration-500 transition"
+      src="https://www.thefoodinmybeard.com/wp-content/uploads/2009/11/wpt10-500x375.jpg"
+      alt=""
+    />
+  </div>
+  <div class="p-2 flex flex-col mb-2 h-2/3">
+    <div class="flex flex-col relative">
+      <h2 class="font-semibold text-lg font-cascadia">Tacos</h2>
+      <h5 class="font-bold text-xl text-primary">RS:-700</h5>
+      <p>Mexican tortilla filled with meat, beans, cheese, and more.
+</p>
+      <button
+        class="absolute h-7 w-7 md:h-10 md:w-10 top-0 right-0 rounded-full bg-primary outline-0 font-bold text-white hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800 cursor-pointer duration-300 transition"
+        title="Order Now"
+      >
+        +
+      </button>
+    </div>
+  </div>
+</div>
 
-                    <p>Traditional Mexican dish consisting of a folded or rolled tortilla filled with various mixtures, such as seasoned meat, beans, lettuce, and cheese.</p>
-                  </div>
-                  <button class="absolute bottom-2 left-1/2 transform -translate-x-1/2 whitespace-nowrap w-auto py-2 px-4 rounded-md bg-primary outline-0 font-bold text-white mt-2 hover:border-2 hover:border-primary hover:bg-transparent hover:text-black cursor-pointer duration-300 transition" title="Order Now">Add to Cart</button>
-                </div>
-            </div>
-            
-             <!-- item 6 -->
-            <div class="border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative" title="Taste. Smile. Repeat. 😋">
-                <div class="h-1/3 w-auto "><img class="h-full w-full object-cover" src="https://recipe30.com/wp-content/uploads/2020/05/chicken-fried-rice.jpg" alt=""></div>
-                <div class="p-2 flex flex-col mb-2 h-2/3">
-                  <div class="flex items-center justify-between">
-                    <h2 class="font-semibold text-lg font-cascadia">Fried rice</h2>
-                    <h5 class="font-bold text-xl text-primary">RS:-1,170</h5>
-                  </div>
-                  <div class="mb-15">
-                    <p>Chicken pieces coated in seasoned batter and deep-fried until crispy.</p>
-                     </div>
-                  <button class="absolute bottom-2 left-1/2 transform -translate-x-1/2 whitespace-nowrap w-auto py-2 px-4 rounded-md bg-primary outline-0 font-bold text-white mt-2 hover:border-2 hover:border-primary hover:bg-transparent hover:text-black cursor-pointer duration-300 transition" title="Order Now">Add to Cart</button>
-                </div>
-            </div>
-            
-             <!-- item 7 -->
-            <div class="border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative" title="Taste. Smile. Repeat. 😋">
-                <div class="h-1/3 w-auto "><img class="h-full w-full object-cover" src="https://img.taste.com.au/BI1PJu7n/taste/2016/11/paprika-beef-steaks-with-chimichurri-sauce-and-wedges-102931-1.jpeg" alt=""></div>
-                <div class="p-2 flex flex-col mb-2 h-2/3">
-                  <div class="flex items-center justify-between">
-                    <h2 class="font-semibold text-lg font-cascadia">Steak</h2>
-                    <h5 class="font-bold text-xl text-primary">RS:-1,650</h5>
-                  </div>
-                  <div class="mb-15"> 
+<!-- item 6 -->
+<div
+  class="border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative"
+  title="Taste. Smile. Repeat. 😋"
+>
+  <div class="h-1/3 w-auto overflow-hidden">
+    <img
+      class="h-full w-full object-cover transform hover:scale-110 duration-500 transition"
+      src="https://recipe30.com/wp-content/uploads/2020/05/chicken-fried-rice.jpg"
+      alt=""
+    />
+  </div>
+  <div class="p-2 flex flex-col mb-2 h-2/3">
+    <div class="flex flex-col relative">
+      <h2 class="font-semibold text-lg font-cascadia">Rice</h2>
+      <h5 class="font-bold text-xl text-primary">RS:-1,170</h5>
+      <p>Chicken pieces coated in seasoned batter and deep-fried until crispy.</p>
+      <button
+        class="absolute h-7 w-7 md:h-10 md:w-10 top-0 right-0 rounded-full bg-primary outline-0 font-bold text-white hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800 cursor-pointer duration-300 transition"
+        title="Order Now"
+      >
+        +
+      </button>
+    </div>
+  </div>
+</div>
 
-                    <p>A cut of meat, usually beef, cooked by grilling, pan-frying, or broiling.</p>
-                  </div>
-                  <button class="absolute bottom-2 left-1/2 transform -translate-x-1/2 whitespace-nowrap w-auto py-2 px-4 rounded-md bg-primary outline-0 font-bold text-white mt-2 hover:border-2 hover:border-primary hover:bg-transparent hover:text-black cursor-pointer duration-300 transition" title="Order Now">Add to Cart</button>
-                </div>
-            </div>
+<!-- item 7 -->
+<div
+  class="border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative"
+  title="Taste. Smile. Repeat. 😋"
+>
+  <div class="h-1/3 w-auto overflow-hidden">
+    <img
+      class="h-full w-full object-cover transform hover:scale-110 duration-500 transition"
+      src="https://img.taste.com.au/BI1PJu7n/taste/2016/11/paprika-beef-steaks-with-chimichurri-sauce-and-wedges-102931-1.jpeg"
+      alt=""
+    />
+  </div>
+  <div class="p-2 flex flex-col mb-2 h-2/3">
+    <div class="flex flex-col relative">
+      <h2 class="font-semibold text-lg font-cascadia">Steak</h2>
+      <h5 class="font-bold text-xl text-primary">RS:-1,650</h5>
+      <p> A cut of meat, usually beef, cooked by grilling, pan-frying, or
+        broiling.</p>
+      <button
+        class="absolute h-7 w-7 md:h-10 md:w-10 top-0 right-0 rounded-full bg-primary outline-0 font-bold text-white hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800 cursor-pointer duration-300 transition"
+        title="Order Now"
+      >
+        +
+      </button>
+    </div>
+  </div>
+</div>
 
-             <!-- item 8 -->
-            <div class="border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative" title="Taste. Smile. Repeat. 😋">
-                <div class="h-1/3 w-auto "><img class="h-full w-full object-cover" src="https://recipes.net/wp-content/uploads/portal_files/recipes_net_posts/2021-08/spicy-ramen-noodles-recipe.png" alt=""></div>
-                <div class="p-2 flex flex-col mb-2 h-2/3">
-                  <div class="flex items-center justify-between">
-                    <h2 class="font-semibold text-lg font-cascadia">Ramen</h2>
-                    <h5 class="font-bold text-xl text-primary">RS:-1,842</h5>
-                  </div>
-                  <div class="mb-15"> 
+<!-- item 8 -->
+<div
+  class="border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative"
+  title="Taste. Smile. Repeat. 😋"
+>
+  <div class="h-1/3 w-auto overflow-hidden">
+    <img
+      class="h-full w-full object-cover transform hover:scale-110 duration-500 transition"
+      src="https://recipes.net/wp-content/uploads/portal_files/recipes_net_posts/2021-08/spicy-ramen-noodles-recipe.png"
+      alt=""
+    />
+  </div>
+  <div class="p-2 flex flex-col mb-2 h-2/3">
+    <div class="flex flex-col relative">
+      <h2 class="font-semibold text-lg font-cascadia">Ramen</h2>
+      <h5 class="font-bold text-xl text-primary">RS:-1,842</h5>
+      <p>Japanese noodle soup with wheat noodles in meat or fish broth.
+</p>
+      <button
+        class="absolute h-7 w-7 md:h-10 md:w-10 top-0 right-0 rounded-full bg-primary outline-0 font-bold text-white hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800 cursor-pointer duration-300 transition"
+        title="Order Now"
+      >
+        +
+      </button>
+    </div>
+  </div>
+</div>
 
-                    <p>Japanese noodle soup dish consisting of Chinese-style wheat noodles served in a meat- or fish-based broth.</p>
-                  </div>
-                  <button class="absolute bottom-2 left-1/2 transform -translate-x-1/2 whitespace-nowrap w-auto py-2 px-4 rounded-md bg-primary outline-0 font-bold text-white mt-2 hover:border-2 hover:border-primary hover:bg-transparent hover:text-black cursor-pointer duration-300 transition" title="Order Now">Add to Cart</button>
-                </div>
-            </div>
-            
-             <!-- item 9 -->
-            <div class="border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative" title="Taste. Smile. Repeat. 😋">
-                <div class="h-1/3 w-auto "><img class="h-full w-full object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxmeqnRdZoCK70uCkNNGnwb4UDWvWY3g3YSEFpNWNzBeZqN2hkbLnCottfQy5r8DV9Adk&usqp=CAU" alt=""></div>
-                <div class="p-2 flex flex-col mb-2 h-2/3">
-                  <div class="flex items-center justify-between">
-                    <h2 class="font-semibold text-lg font-cascadia">Salad</h2>
-                    <h5 class="font-bold text-xl text-primary">RS:-3,250</h5>
-                  </div>
-                  <div class="mb-15"> 
+<!-- item 9 -->
+<div
+  class="border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative"
+  title="Taste. Smile. Repeat. 😋"
+>
+  <div class="h-1/3 w-auto overflow-hidden">
+    <img
+      class="h-full w-full object-cover transform hover:scale-110 duration-500 transition"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxmeqnRdZoCK70uCkNNGnwb4UDWvWY3g3YSEFpNWNzBeZqN2hkbLnCottfQy5r8DV9Adk&usqp=CAU"
+      alt=""
+    />
+  </div>
+  <div class="p-2 flex flex-col mb-2 h-2/3">
+    <div class="flex flex-col relative">
+      <h2 class="font-semibold text-lg font-cascadia">Salad</h2>
+      <h5 class="font-bold text-xl text-primary">RS:-3,250</h5>
+      <p>A dish consisting of a mixture of small pieces of food, typically
+        vegetables or fruits.</p>
+      <button
+        class="absolute h-7 w-7 md:h-10 md:w-10 top-0 right-0 rounded-full bg-primary outline-0 font-bold text-white hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800 cursor-pointer duration-300 transition"
+        title="Order Now"
+      >
+        +
+      </button>
+    </div>
+  </div>
+</div>
 
-                    <p>A dish consisting of a mixture of small pieces of food, typically vegetables or fruits.</p>
-                  </div>
-                  <button class="absolute bottom-2 left-1/2 transform -translate-x-1/2 whitespace-nowrap w-auto py-2 px-4 rounded-md bg-primary outline-0 font-bold text-white mt-2 hover:border-2 hover:border-primary hover:bg-transparent hover:text-black cursor-pointer duration-300 transition" title="Order Now">Add to Cart</button>
-                </div>
-            </div>
-            
-             <!-- item 10 -->
-            <div class="border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative" title="Taste. Smile. Repeat. 😋">
-                <div class="h-1/3 w-auto "><img class="h-full w-full object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwl18NV3toTNOKX4Z6PvhoypkRLLwo6FFIffT679JgUDwpt54vusAEfX4gFAGV69VnAO4&usqp=CAU" alt=""></div>
-                <div class="p-2 flex flex-col mb-2 h-2/3">
-                  <div class="flex items-center justify-between">
-                    <h2 class="font-semibold text-lg font-cascadia">Biryani</h2>
-                    <h5 class="font-bold text-xl text-primary">RS:-1,100</h5>
-                  </div>
-                  <div class="mb-15"> 
+<!-- item 10 -->
+<div
+  class="border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative"
+  title="Taste. Smile. Repeat. 😋"
+>
+  <div class="h-1/3 w-auto overflow-hidden">
+    <img
+      class="h-full w-full object-cover transform hover:scale-110 duration-500 transition"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwl18NV3toTNOKX4Z6PvhoypkRLLwo6FFIffT679JgUDwpt54vusAEfX4gFAGV69VnAO4&usqp=CAU"
+      alt=""
+    />
+  </div>
+  <div class="p-2 flex flex-col mb-2 h-2/3">
+    <div class="flex flex-col relative">
+      <h2 class="font-semibold text-lg font-cascadia">Biryani</h2>
+      <h5 class="font-bold text-xl text-primary">RS:-1,100</h5>
+      <p>Two or more slices of bread with one or more fillings between them.</p>
+      <button
+        class="absolute h-7 w-7 md:h-10 md:w-10 top-0 right-0 rounded-full bg-primary outline-0 font-bold text-white hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800 cursor-pointer duration-300 transition"
+        title="Order Now"
+      >
+        +
+      </button>
+    </div>
+  </div>
+</div>
 
-                    <p>Two or more slices of bread with one or more fillings between them.</p>
-                  </div>
-                  <button class="absolute bottom-2 left-1/2 transform -translate-x-1/2 whitespace-nowrap w-auto py-2 px-4 rounded-md bg-primary outline-0 font-bold text-white mt-2 hover:border-2 hover:border-primary hover:bg-transparent hover:text-black cursor-pointer duration-300 transition" title="Order Now">Add to Cart</button>
-                </div>
-            </div>
+<!-- item 11 -->
+<div
+  class="border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative"
+  title="Taste. Smile. Repeat. 😋"
+>
+  <div class="h-1/3 w-auto overflow-hidden">
+    <img
+      class="h-full w-full object-cover transform hover:scale-110 duration-500 transition"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWD9R62F3pGWTJD45Xl-rMqJXdCYvEjw8arJ-MnU6j6JXlKq1m1K-BTLCvVtpU-zlT0c&usqp=CAU"
+      alt=""
+    />
+  </div>
+  <div class="p-2 flex flex-col mb-2 h-2/3">
+    <div class="flex flex-col relative">
+      <h2 class="font-semibold text-lg font-cascadia">Lasagna</h2>
+      <h5 class="font-bold text-xl text-primary">RS:-1,500</h5>
+      <p>Italian dish with layered pasta, sauce, meat, vegetables, and cheese.
+</p>
+      <button
+        class="absolute h-7 w-7 md:h-10 md:w-10 top-0 right-0 rounded-full bg-primary outline-0 font-bold text-white hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800 cursor-pointer duration-300 transition"
+        title="Order Now"
+      >
+        +
+      </button>
+    </div>
+  </div>
+</div>
 
-             <!-- item 11 -->
-            <div class="border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative" title="Taste. Smile. Repeat. 😋">
-                <div class="h-1/3 w-auto "><img class="h-full w-full object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWD9R62F3pGWTJD45Xl-rMqJXdCYvEjw8arJ-MnU6j6JXlKq1m1K-BTLCvVtpU-zlT0c&usqp=CAU" alt=""></div>
-                <div class="p-2 flex flex-col mb-2 h-2/3">
-                  <div class="flex items-center justify-between">
-                    <h2 class="font-semibold text-lg font-cascadia">Lasagna</h2>
-                    <h5 class="font-bold text-xl text-primary">RS:-1,500</h5>
-                  </div>
-                  <p>Italian dish made of stacked layers of pasta alternated with sauces and ingredients such as meats, vegetables, and cheese.</p>
-                  <div class="mb-15"> </div>
-                  <button class="absolute bottom-2 left-1/2 transform -translate-x-1/2 whitespace-nowrap w-auto py-2 px-4 rounded-md bg-primary outline-0 font-bold text-white mt-2 hover:border-2 hover:border-primary hover:bg-transparent hover:text-black cursor-pointer duration-300 transition" title="Order Now">Add to Cart</button>
-                </div>
-            </div>
-            
-             <!-- item 12 -->
-            <div class="border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative" title="Taste. Smile. Repeat. 😋">
-                <div class="h-1/3 w-auto "><img class="h-full w-full object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThRB9hJEWra0GkC4slhSLqAqIedONYrE_bd9NGeVOT_cfoXiVRCsLKu-zzhm5bq_PScPU&usqp=CAU" alt=""></div>
-                <div class="p-2 flex flex-col mb-2 h-2/3">
-                  <div class="flex items-center justify-between">
-                    <h2 class="font-semibold text-lg font-cascadia">Falafel</h2>
-                    <h5 class="font-bold text-xl text-primary">RS:-300</h5>
-                  </div>
-                  <div class="mb-15"> 
+<!-- item 12 -->
+<div
+  class="border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative"
+  title="Taste. Smile. Repeat. 😋"
+>
+  <div class="h-1/3 w-auto overflow-hidden">
+    <img
+      class="h-full w-full object-cover transform hover:scale-110 duration-500 transition"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThRB9hJEWra0GkC4slhSLqAqIedONYrE_bd9NGeVOT_cfoXiVRCsLKu-zzhm5bq_PScPU&usqp=CAU"
+      alt=""
+    />
+  </div>
+  <div class="p-2 flex flex-col mb-2 h-2/3">
+    <div class="flex flex-col relative">
+      <h2 class="font-semibold text-lg font-cascadia">Falafel</h2>
+      <h5 class="font-bold text-xl text-primary">RS:-300</h5>
+      <p>Deep-fried ball or patty made from ground chickpeas or fava beans.
+        </p>
+      <button
+        class="absolute h-7 w-7 md:h-10 md:w-10 top-0 right-0 rounded-full bg-primary outline-0 font-bold text-white hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800 cursor-pointer duration-300 transition"
+        title="Order Now"
+      >
+        +
+      </button>
+    </div>
+  </div>
+</div>
 
-                    <p>Deep-fried ball or patty made from ground chickpeas or fava beans, commonly served in pita bread.</p>
-                  </div>
-                  <button class="absolute bottom-2 left-1/2 transform -translate-x-1/2 whitespace-nowrap w-auto py-2 px-4 rounded-md bg-primary outline-0 font-bold text-white mt-2 hover:border-2 hover:border-primary hover:bg-transparent hover:text-black cursor-pointer duration-300 transition" title="Order Now">Add to Cart</button>
-                </div>
-            </div>
-            
-            
-            
+             
         </div>
         </div>
        
@@ -443,6 +573,356 @@
       </div>
      </section>
 
+     <!-- food menu section  -->
+      
+      <section class="my-10 sm:my-2 w-full">
+        <div class="min-w-full md:min-w-3xl max-w-3xl mx-auto flex flex-col items-center gap-5">
+          <h1 class="font-bold text-3xl md:text-4xl">Food Menu Items</h1>
+          <div class="container w-full flex items-center my-5 sm:my-8 justify-between gap-4 sm:gap-6 shadow-lg">
+
+            <button class="relative cursor-pointer">
+
+              <div class="absolute -bottom-4 left-1 md:left-1/5   h-1 mx-auto w-15 md:w-30 bg-primary"></div>
+                 <div class="flex flex-col md:flex-row items-center gap-3">
+            <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="text-primary w-8 lg:w-15 h-8 lg:h-15"><path fill="currentColor" d="M54.2 25.7c-1.3 0-2.6.3-3.7.9c-.2-3.2-2.9-5.7-6.1-5.7H9.3c-3.4 0-6.1 2.7-6.1 6.1v9.5c0 9.2 5.9 17 14.1 19.9H4c-1.2 0-2.3 1-2.3 2.3S2.7 61 4 61h45.8c1.2 0 2.3-1 2.3-2.3s-1-2.3-2.3-2.3H36.4c5.9-2.1 10.5-6.7 12.7-12.4c1.4 1.1 3.2 1.8 5.1 1.8c2.2 0 4.4-.9 5.9-2.5c1.5-1.5 2.2-3.5 2.1-5.5v-4.1c0-4.4-3.5-8-8-8M46 36.5c0 9.2-7.5 16.7-16.7 16.7h-4.9c-9.2 0-16.7-7.5-16.7-16.7V27c0-.9.7-1.6 1.6-1.6h35.1c.9 0 1.6.7 1.6 1.6zm10.9 3.8c-.7.7-1.6 1.1-2.6 1.1c-1.9 0-3.5-1.6-3.5-3.5v-4.1c0-1.9 1.6-3.5 3.5-3.5s3.5 1.6 3.5 3.5V38c0 .8-.3 1.6-.9 2.3M13.8 16.5c1.2 0 2.3-1 2.3-2.3V5.3c0-1.2-1-2.3-2.3-2.3s-2.3 1-2.3 2.3v8.9c0 1.3 1.1 2.3 2.3 2.3m13.1 0c1.2 0 2.3-1 2.3-2.3V5.3c0-1.2-1-2.3-2.3-2.3s-2.3 1-2.3 2.3v8.9c0 1.3 1 2.3 2.3 2.3m13.1 0c1.2 0 2.3-1 2.3-2.3V5.3c0-1.2-1-2.3-2.3-2.3s-2.3 1-2.3 2.3v8.9c0 1.3 1 2.3 2.3 2.3"/></svg></div>
+            <div>
+              <p class="text-gray-500 text-md sm:text-lg font-semibold">Popular</p>
+              <h2 class="font-semibold text-lg sm:text-xl">Breakfast</h2>
+            </div>
+            </div>
+            </button>
+            
+            <button class="relative cursor-pointer">
+              <div class="flex flex-col md:flex-row items-center gap-3">
+            <div><svg class="text-primary w-8 lg:w-15 h-8 lg:h-15" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256"><path fill="currentColor" d="M48.07 104h159.86a16 16 0 0 0 15.72-19.38C216.22 49.5 176 24 128 24S39.78 49.5 32.35 84.62A16 16 0 0 0 48.07 104M128 40c39.82 0 74.21 20.61 79.93 48H48.07l-.07-.07C53.79 60.61 88.18 40 128 40m101.26 112.48l-41.13 15L151 152.57a8 8 0 0 0-5.94 0l-37 14.81L71 152.57a8 8 0 0 0-5.7-.09l-44 16a8 8 0 0 0 5.47 15L40 178.69V184a40 40 0 0 0 40 40h96a40 40 0 0 0 40-40v-9.67l18.73-6.81a8 8 0 1 0-5.47-15ZM200 184a24 24 0 0 1-24 24H80a24 24 0 0 1-24-24v-11.12l11.87-4.32L105 183.43a8 8 0 0 0 5.94 0l37-14.81l37 14.81a8 8 0 0 0 5.7.09l9.27-3.37ZM16 128a8 8 0 0 1 8-8h208a8 8 0 0 1 0 16H24a8 8 0 0 1-8-8"/></svg></div>
+            <div>
+              <p class="text-gray-500 text-md sm:text-lg font-semibold">Special</p>
+              <h2 class="font-semibold text-lg sm:text-xl">Launch</h2>
+            </div>
+            </div>
+            </button>
+            
+            <button class="relative cursor-pointer">
+              <div class="flex flex-col md:flex-row items-center gap-3">
+            <div><svg class="text-primary w-8 lg:w-15 h-8 lg:h-15" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16"><path fill="currentColor" d="M11.082 2.586c-.464.464-.975 1.413-1.172 2.32c-.128.592-.362 1.267-.882 1.765l-.227.216l.849.773l.185-.194c.495-.518 1.168-.752 1.758-.88c.907-.198 1.854-.708 2.318-1.172a2 2 0 0 0-2.829-2.828m-.524 5.571l-.168.176l3.016 2.745l.008.008a2 2 0 1 1-2.828 2.828l-.008-.008l-2.69-2.955l-2.9 3.037a1.75 1.75 0 0 1-2.475-2.475l.008-.008l2.62-2.503h-.52a2 2 0 0 1-1.414-.586L1.086 6.295a2 2 0 0 1 0-2.829l1.878-1.878a2 2 0 0 1 2.829 0l2.121 2.12A2 2 0 0 1 8.5 5.124v.64c.208-.279.341-.646.433-1.068c.23-1.062.82-2.194 1.442-2.816a3 3 0 1 1 4.243 4.242c-.622.622-1.752 1.211-2.812 1.442c-.52.113-.958.29-1.248.594M6.335 9.244l-3.119 2.98a.75.75 0 0 0 1.06 1.06l2.938-3.074zm-1.25-6.95a1 1 0 0 0-1.413 0l-1.88 1.88a1 1 0 0 0 0 1.414l2.122 2.12a1 1 0 0 0 .707.294h1.273a1.5 1.5 0 0 1 1.11.49l4.296 4.723a1 1 0 0 0 1.415-1.415L7.99 7.501a1.5 1.5 0 0 1-.49-1.109V5.123a1 1 0 0 0-.293-.707zm-1.73 2.353a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 1 0 .708-.708zm.792-1.5a.5.5 0 0 1 .708 0l1.5 1.5a.5.5 0 1 1-.708.708l-1.5-1.5a.5.5 0 0 1 0-.708M11.75 4a.5.5 0 0 0-1 0c0 .966.784 1.75 1.75 1.75a.5.5 0 0 0 0-1a.75.75 0 0 1-.75-.75"/></svg></div>
+            <div>
+              <p class="text-gray-500 text-md sm:text-lg font-semibold">Lovely</p>
+              <h2 class="font-semibold text-lg sm:text-xl">Dinner</h2>
+            </div>
+            </div>
+            </button>
+            
+          </div>
+         
+
+        </div>
+
+        <div class="container my-5 md:my-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-2 gap-y-4 lg:gap-x-5 lg:gap-y-5">
+
+              <!-- Breakfast section  -->
+
+              <div class="relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md">
+                <div class="h-25 w-40"><img class="w-full h-full object-center object-cover" src="https://inemai.com/wp-content/uploads/2019/02/Dosai.png" alt=""></div>
+                <div class="flex   flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5">
+                  <h1 class="font-bold text-lg lg:text-2xl font-cascadia">Dosai</h1>
+                  <p>Thin, crispy rice pancake served with chutney, sambar.</p>
+                  <h1 class="text-primary font-semibold">Rs:-100</h1>
+                </div>
+                <button title="Order Now" class="w-12 md:w-15 mr-2 lg:mr-1 aspect-square rounded-full flex items-center justify-center bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition ease-in-out">
+                +
+              </button>
+              </div>
+
+              <div class="relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md">
+                <div class="h-25 w-40"><img class="w-full h-full object-center object-cover" src="https://www.foodie-trail.com/wp-content/uploads/2020/06/251fdbc0-57f6-41c3-a976-5192391cf040.jpg" alt=""></div>
+                <div class="flex   flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5">
+                  <h1 class="font-bold text-lg lg:text-2xl font-cascadia">Idli</h1>
+                  <p>Soft steamed rice cakes, light and healthy breakfast.</p>
+                  <h1 class="text-primary font-semibold">Rs:-80</h1>
+                </div>
+                <button title="Order Now" class="w-12 md:w-15 mr-2 lg:mr-1 aspect-square rounded-full flex items-center justify-center bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition ease-in-out">
+                +
+              </button>
+              </div>
+
+              <div class="relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md">
+                <div class="h-25 w-40"><img class="w-full h-full object-center object-cover" src="https://harischandramills.com/wp-content/uploads/2018/06/2-2.jpg" alt=""></div>
+                <div class="flex   flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5">
+                  <h1 class="font-bold text-lg lg:text-2xl font-cascadia">Pittu </h1>
+                  <p>Steamed rice flour with coconut, served with curry.</p>
+                  <h1 class="text-primary font-semibold">Rs:-120</h1>
+                </div>
+                <button title="Order Now" class="w-12 md:w-15 mr-2 lg:mr-1 aspect-square rounded-full flex items-center justify-center bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition ease-in-out">
+                +
+              </button>
+              </div>
+
+              <div class="relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md">
+                <div class="h-25 w-40"><img class="w-full h-full object-center object-cover" src="https://www.hungrylankan.com/wp-content/uploads/2024/06/PXL_20230907_022830223.PORTRAIT-2-480x270.jpg" alt=""></div>
+                <div class="flex   flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5">
+                  <h1 class="font-bold text-lg lg:text-2xl font-cascadia">Hoppers</h1>
+                  <p>Fermented rice pancake, crispy edges and soft center.</p>
+                  <h1 class="text-primary font-semibold">Rs:-100</h1>
+                </div>
+                <button title="Order Now" class="w-12 md:w-15 mr-2 lg:mr-1 aspect-square rounded-full flex items-center justify-center bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition ease-in-out">
+                +
+              </button>
+              </div>
+
+               <div class="relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md">
+                <div class="h-25 w-40"><img class="w-full h-full object-center object-cover" src="https://www.awesomecuisine.com/wp-content/uploads/2014/12/medhu-vadai.jpg" alt=""></div>
+                <div class="flex   flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5">
+                  <h1 class="font-bold text-lg lg:text-2xl font-cascadia">Vadai </h1>
+                  <p>Crunchy lentil fritter, spicy and deep-fried goodness.</p>
+                  <h1 class="text-primary font-semibold">Rs:-60</h1>
+                </div>
+                <button title="Order Now" class="w-12 md:w-15 mr-2 lg:mr-1 aspect-square rounded-full flex items-center justify-center bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition ease-in-out">
+                +
+              </button>
+              </div>
+
+              <div class="relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md">
+                <div class="h-25 w-40"><img class="w-full h-full object-center object-cover" src="https://harischandramills.com/wp-content/uploads/2018/06/3-2.jpg" alt=""></div>
+                <div class="flex   flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5">
+                  <h1 class="font-bold text-lg lg:text-2xl font-cascadia">String Hoppers</h1>
+                  <p>Steamed rice noodles, often served with coconut milk.</p>
+                  <h1 class="text-primary font-semibold">Rs:-100</h1>
+                </div>
+                <button title="Order Now" class="w-12 md:w-15 mr-2 lg:mr-1 aspect-square rounded-full flex items-center justify-center bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition ease-in-out">
+                +
+              </button>
+              </div>
+
+              <div class="relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md">
+                <div class="h-25 w-40"><img class="w-full h-full object-center object-cover" src="https://www.sidechef.com/recipe/5a10d1ae-8a69-43e2-b95d-4db53f572a52.jpg?d=1408x1120" alt=""></div>
+                <div class="flex   flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5">
+                  <h1 class="font-bold text-lg lg:text-2xl font-cascadia">Roti</h1>
+                  <p>Coconut flatbread, eaten with lunu miris or spicy curry.</p>
+                  <h1 class="text-primary font-semibold">Rs:-80</h1>
+                </div>
+                <button title="Order Now" class="w-12 md:w-15 mr-2 lg:mr-1 aspect-square rounded-full flex items-center justify-center bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition ease-in-out">
+                +
+              </button>
+              </div>
+
+              <div class="relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md">
+                <div class="h-25 w-40"><img class="w-full h-full object-center object-cover" src="https://www.munatycooking.com/wp-content/uploads/2023/12/Chapati-4-480x270.jpg" alt=""></div>
+                <div class="flex   flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5">
+                  <h1 class="font-bold text-lg lg:text-2xl font-cascadia">Chapati </h1>
+                  <p>Wheat flatbread, soft and warm, paired with curry.</p>
+                  <h1 class="text-primary font-semibold">Rs:-70</h1>
+                </div>
+                <button title="Order Now" class="w-12 md:w-15 mr-2 lg:mr-1 aspect-square rounded-full flex items-center justify-center bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition ease-in-out">
+                +
+              </button>
+              </div>
+
+
+              <!-- lunch section  -->
+
+               <!-- <div class="relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md">
+                <div class="h-25 w-40"><img class="w-full h-full object-center object-cover" src="https://inemai.com/wp-content/uploads/2019/02/Dosai.png" alt=""></div>
+                <div class="flex   flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5">
+                  <h1 class="font-bold text-lg lg:text-2xl font-cascadia">Dosai</h1>
+                  <p>Thin, crispy rice pancake served with chutney, sambar.</p>
+                  <h1 class="text-primary font-semibold">Rs:-100</h1>
+                </div>
+                <button title="Order Now" class="w-12 md:w-15 mr-2 lg:mr-1 aspect-square rounded-full flex items-center justify-center bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition ease-in-out">
+                +
+              </button>
+              </div>
+
+              <div class="relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md">
+                <div class="h-25 w-40"><img class="w-full h-full object-center object-cover" src="https://www.foodie-trail.com/wp-content/uploads/2020/06/251fdbc0-57f6-41c3-a976-5192391cf040.jpg" alt=""></div>
+                <div class="flex   flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5">
+                  <h1 class="font-bold text-lg lg:text-2xl font-cascadia">Idli</h1>
+                  <p>Soft steamed rice cakes, light and healthy breakfast.</p>
+                  <h1 class="text-primary font-semibold">Rs:-80</h1>
+                </div>
+                <button title="Order Now" class="w-12 md:w-15 mr-2 lg:mr-1 aspect-square rounded-full flex items-center justify-center bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition ease-in-out">
+                +
+              </button>
+              </div>
+
+              <div class="relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md">
+                <div class="h-25 w-40"><img class="w-full h-full object-center object-cover" src="https://harischandramills.com/wp-content/uploads/2018/06/2-2.jpg" alt=""></div>
+                <div class="flex   flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5">
+                  <h1 class="font-bold text-lg lg:text-2xl font-cascadia">Pittu </h1>
+                  <p>Steamed rice flour with coconut, served with curry.</p>
+                  <h1 class="text-primary font-semibold">Rs:-120</h1>
+                </div>
+                <button title="Order Now" class="w-12 md:w-15 mr-2 lg:mr-1 aspect-square rounded-full flex items-center justify-center bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition ease-in-out">
+                +
+              </button>
+              </div>
+
+              <div class="relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md">
+                <div class="h-25 w-40"><img class="w-full h-full object-center object-cover" src="https://www.hungrylankan.com/wp-content/uploads/2024/06/PXL_20230907_022830223.PORTRAIT-2-480x270.jpg" alt=""></div>
+                <div class="flex   flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5">
+                  <h1 class="font-bold text-lg lg:text-2xl font-cascadia">Hoppers</h1>
+                  <p>Fermented rice pancake, crispy edges and soft center.</p>
+                  <h1 class="text-primary font-semibold">Rs:-100</h1>
+                </div>
+                <button title="Order Now" class="w-12 md:w-15 mr-2 lg:mr-1 aspect-square rounded-full flex items-center justify-center bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition ease-in-out">
+                +
+              </button>
+              </div>
+
+               <div class="relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md">
+                <div class="h-25 w-40"><img class="w-full h-full object-center object-cover" src="https://www.awesomecuisine.com/wp-content/uploads/2014/12/medhu-vadai.jpg" alt=""></div>
+                <div class="flex   flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5">
+                  <h1 class="font-bold text-lg lg:text-2xl font-cascadia">Vadai </h1>
+                  <p>Crunchy lentil fritter, spicy and deep-fried goodness.</p>
+                  <h1 class="text-primary font-semibold">Rs:-60</h1>
+                </div>
+                <button title="Order Now" class="w-12 md:w-15 mr-2 lg:mr-1 aspect-square rounded-full flex items-center justify-center bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition ease-in-out">
+                +
+              </button>
+              </div>
+
+              <div class="relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md">
+                <div class="h-25 w-40"><img class="w-full h-full object-center object-cover" src="https://harischandramills.com/wp-content/uploads/2018/06/3-2.jpg" alt=""></div>
+                <div class="flex   flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5">
+                  <h1 class="font-bold text-lg lg:text-2xl font-cascadia">String Hoppers</h1>
+                  <p>Steamed rice noodles, often served with coconut milk.</p>
+                  <h1 class="text-primary font-semibold">Rs:-100</h1>
+                </div>
+                <button title="Order Now" class="w-12 md:w-15 mr-2 lg:mr-1 aspect-square rounded-full flex items-center justify-center bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition ease-in-out">
+                +
+              </button>
+              </div>
+
+              <div class="relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md">
+                <div class="h-25 w-40"><img class="w-full h-full object-center object-cover" src="https://www.sidechef.com/recipe/5a10d1ae-8a69-43e2-b95d-4db53f572a52.jpg?d=1408x1120" alt=""></div>
+                <div class="flex   flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5">
+                  <h1 class="font-bold text-lg lg:text-2xl font-cascadia">Roti</h1>
+                  <p>Coconut flatbread, eaten with lunu miris or spicy curry.</p>
+                  <h1 class="text-primary font-semibold">Rs:-80</h1>
+                </div>
+                <button title="Order Now" class="w-12 md:w-15 mr-2 lg:mr-1 aspect-square rounded-full flex items-center justify-center bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition ease-in-out">
+                +
+              </button>
+              </div>
+
+              <div class="relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md">
+                <div class="h-25 w-40"><img class="w-full h-full object-center object-cover" src="https://www.munatycooking.com/wp-content/uploads/2023/12/Chapati-4-480x270.jpg" alt=""></div>
+                <div class="flex   flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5">
+                  <h1 class="font-bold text-lg lg:text-2xl font-cascadia">Chapati </h1>
+                  <p>Wheat flatbread, soft and warm, paired with curry.</p>
+                  <h1 class="text-primary font-semibold">Rs:-70</h1>
+                </div>
+                <button title="Order Now" class="w-12 md:w-15 mr-2 lg:mr-1 aspect-square rounded-full flex items-center justify-center bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition ease-in-out">
+                +
+              </button>
+              </div> -->
+
+
+
+
+              <!-- dinner section  -->
+
+               <!-- <div class="relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md">
+                <div class="h-25 w-40"><img class="w-full h-full object-center object-cover" src="https://inemai.com/wp-content/uploads/2019/02/Dosai.png" alt=""></div>
+                <div class="flex   flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5">
+                  <h1 class="font-bold text-lg lg:text-2xl font-cascadia">Dosai</h1>
+                  <p>Thin, crispy rice pancake served with chutney, sambar.</p>
+                  <h1 class="text-primary font-semibold">Rs:-100</h1>
+                </div>
+                <button title="Order Now" class="w-12 md:w-15 mr-2 lg:mr-1 aspect-square rounded-full flex items-center justify-center bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition ease-in-out">
+                +
+              </button>
+              </div>
+
+              <div class="relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md">
+                <div class="h-25 w-40"><img class="w-full h-full object-center object-cover" src="https://www.foodie-trail.com/wp-content/uploads/2020/06/251fdbc0-57f6-41c3-a976-5192391cf040.jpg" alt=""></div>
+                <div class="flex   flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5">
+                  <h1 class="font-bold text-lg lg:text-2xl font-cascadia">Idli</h1>
+                  <p>Soft steamed rice cakes, light and healthy breakfast.</p>
+                  <h1 class="text-primary font-semibold">Rs:-80</h1>
+                </div>
+                <button title="Order Now" class="w-12 md:w-15 mr-2 lg:mr-1 aspect-square rounded-full flex items-center justify-center bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition ease-in-out">
+                +
+              </button>
+              </div>
+
+              <div class="relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md">
+                <div class="h-25 w-40"><img class="w-full h-full object-center object-cover" src="https://harischandramills.com/wp-content/uploads/2018/06/2-2.jpg" alt=""></div>
+                <div class="flex   flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5">
+                  <h1 class="font-bold text-lg lg:text-2xl font-cascadia">Pittu </h1>
+                  <p>Steamed rice flour with coconut, served with curry.</p>
+                  <h1 class="text-primary font-semibold">Rs:-120</h1>
+                </div>
+                <button title="Order Now" class="w-12 md:w-15 mr-2 lg:mr-1 aspect-square rounded-full flex items-center justify-center bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition ease-in-out">
+                +
+              </button>
+              </div>
+
+              <div class="relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md">
+                <div class="h-25 w-40"><img class="w-full h-full object-center object-cover" src="https://www.hungrylankan.com/wp-content/uploads/2024/06/PXL_20230907_022830223.PORTRAIT-2-480x270.jpg" alt=""></div>
+                <div class="flex   flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5">
+                  <h1 class="font-bold text-lg lg:text-2xl font-cascadia">Hoppers</h1>
+                  <p>Fermented rice pancake, crispy edges and soft center.</p>
+                  <h1 class="text-primary font-semibold">Rs:-100</h1>
+                </div>
+                <button title="Order Now" class="w-12 md:w-15 mr-2 lg:mr-1 aspect-square rounded-full flex items-center justify-center bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition ease-in-out">
+                +
+              </button>
+              </div>
+
+               <div class="relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md">
+                <div class="h-25 w-40"><img class="w-full h-full object-center object-cover" src="https://www.awesomecuisine.com/wp-content/uploads/2014/12/medhu-vadai.jpg" alt=""></div>
+                <div class="flex   flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5">
+                  <h1 class="font-bold text-lg lg:text-2xl font-cascadia">Vadai </h1>
+                  <p>Crunchy lentil fritter, spicy and deep-fried goodness.</p>
+                  <h1 class="text-primary font-semibold">Rs:-60</h1>
+                </div>
+                <button title="Order Now" class="w-12 md:w-15 mr-2 lg:mr-1 aspect-square rounded-full flex items-center justify-center bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition ease-in-out">
+                +
+              </button>
+              </div>
+
+              <div class="relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md">
+                <div class="h-25 w-40"><img class="w-full h-full object-center object-cover" src="https://harischandramills.com/wp-content/uploads/2018/06/3-2.jpg" alt=""></div>
+                <div class="flex   flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5">
+                  <h1 class="font-bold text-lg lg:text-2xl font-cascadia">String Hoppers</h1>
+                  <p>Steamed rice noodles, often served with coconut milk.</p>
+                  <h1 class="text-primary font-semibold">Rs:-100</h1>
+                </div>
+                <button title="Order Now" class="w-12 md:w-15 mr-2 lg:mr-1 aspect-square rounded-full flex items-center justify-center bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition ease-in-out">
+                +
+              </button>
+              </div>
+
+              <div class="relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md">
+                <div class="h-25 w-40"><img class="w-full h-full object-center object-cover" src="https://www.sidechef.com/recipe/5a10d1ae-8a69-43e2-b95d-4db53f572a52.jpg?d=1408x1120" alt=""></div>
+                <div class="flex   flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5">
+                  <h1 class="font-bold text-lg lg:text-2xl font-cascadia">Roti</h1>
+                  <p>Coconut flatbread, eaten with lunu miris or spicy curry.</p>
+                  <h1 class="text-primary font-semibold">Rs:-80</h1>
+                </div>
+                <button title="Order Now" class="w-12 md:w-15 mr-2 lg:mr-1 aspect-square rounded-full flex items-center justify-center bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition ease-in-out">
+                +
+              </button>
+              </div>
+
+              <div class="relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md">
+                <div class="h-25 w-40"><img class="w-full h-full object-center object-cover" src="https://www.munatycooking.com/wp-content/uploads/2023/12/Chapati-4-480x270.jpg" alt=""></div>
+                <div class="flex   flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5">
+                  <h1 class="font-bold text-lg lg:text-2xl font-cascadia">Chapati </h1>
+                  <p>Wheat flatbread, soft and warm, paired with curry.</p>
+                  <h1 class="text-primary font-semibold">Rs:-70</h1>
+                </div>
+                <button title="Order Now" class="w-12 md:w-15 mr-2 lg:mr-1 aspect-square rounded-full flex items-center justify-center bg-primary outline-0 font-bold text-white  hover:border-2 hover:border-primary hover:bg-transparent hover:text-green-800  cursor-pointer duration-300 transition ease-in-out">
+                +
+              </button>
+              </div> -->
+
+
+            </div>
+        </div>
+
+      </section>
 
     <!-- my external js link -->
     <script src="./main.js"></script>
