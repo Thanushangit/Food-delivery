@@ -24,6 +24,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- fontawesome icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css"
+      integrity="sha512-GmZYQ9SKTnOea030Tbiat0Y+jhnYLIpsGAe6QTnToi8hI2nNbVMETHeK4wm4MuYMQdrc38x+sX77+kVD01eNsQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- output.css link  -->
     <link rel="stylesheet" href="./output.css" />
     <!-- favicon link  -->
@@ -123,31 +131,43 @@
     </header>
 
     <!-- Flash Offer part -->
-    <section class="relative  w-full py-20 bg-[url('./img/flash-offer-bg.jpg')] min-h-[100vh] bg-cover  text-white ">
+    <section
+      class="w-full min-h-screen relative bg-[url('./img/flash-offer-bg.jpg')] bg-cover bg-center text-white"
+    >
+      <!-- Black Overlay that matches section size -->
+      <div class="absolute inset-0 bg-black/80"></div>
 
-      <div class="absolute inset-0 bg-black/80 flex items-center justify-center ">
-        <div class="container flex flex-col-reverse md:flex-row items-center">
-            <div class="w-full md:w-1/2 flex flex-col gap-y-3">
-              <h1 class="text-4xl md:text-6xl font-bold leading-tight">
-                Enjoy our <br />
-                Delicious meal
-              </h1>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur
-                eius numquam similique quos reprehenderit excepturi fugiat odit
-                maiores perspiciatis. Debitis.
-              </p>
-              <button class="py-3 px-4 outline-0 rounded-md bg-amber-600 cursor-pointer hover:border-amber-600 duration-300 hover:bg-emerald-800 font-semibold text-xl min-w-lg">Book Now</button>
-            </div>
+      <!-- Content Layer (on top of black overlay) -->
+      <div class="relative z-10 flex items-center justify-center min-h-screen">
+        <div
+          class="container flex flex-col-reverse md:flex-row items-center gap-5 md:gap-8 mt-15"
+        >
+          <div class="w-full md:w-1/2 flex flex-col gap-y-3">
+            </p>
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+              Enjoy our <br />
+              Delicious meal
+            </h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Aspernatur eius numquam similique quos reprehenderit excepturi
+              fugiat odit maiores perspiciatis. Debitis.
+            </p>
+            
+              <a href=""
+              class="flex items-center justify-center gap-2 py-3 px-4 outline-0 rounded-md bg-amber-600 cursor-pointer hover:border-amber-600 duration-300 hover:bg-emerald-800 font-semibold w-full sm:w-fit text-xl text-center">
+              Order Now
+              <span><i class="fa-solid fa-arrow-right fa-beat"></i></span>
+            </a>
 
-            <div class="w-full md:w-1/2">
-                <div class="">
-                    <img src="./img/flash-offer-biriyani.png" alt="buriyani">
-                </div>
-            </div>
           </div>
+
+          <div class="w-full md:w-1/2">
+            <img src="./img/flash-offer-biriyani.png" alt="biriyani" />
+          </div>
+        </div>
+      </div>
     </section>
-      
 
     <!-- my external js link -->
     <script src="./main.js"></script>
