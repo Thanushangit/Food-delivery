@@ -32,15 +32,3 @@
 }
 
 
-  @keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
-
-  .rotate-border {
-    animation: spin 4s linear infinite;
-  }
-
-  .group:hover .rotate-border {
-    animation: none;
-  }

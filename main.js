@@ -20,3 +20,46 @@ navlinkE1.forEach(link =>{
     })
 })
 
+
+// for the menu cart (breakfast,lunch,dinner)
+
+const sections = ['breakFast', 'lunch', 'dinner'];
+
+sections.forEach(section => {
+  const btn = document.getElementById(`${section}Btn`);
+  btn.addEventListener('click', () => {
+    sections.forEach(other => {
+      const div = document.getElementById(`${other}Div`);
+      const underline = document.getElementById(`${other}BtnUnderLine`);
+
+      const isActive = section === other;
+
+      // Handle section visibility
+      div.classList.toggle('hidden', !isActive);
+      div.classList.toggle('grid', isActive);
+    
+
+      // Handle underline animation
+      if (isActive) {
+        underline.classList.remove('hidden');
+        underline.classList.add('absolute');
+        // Expand underline from center out
+        setTimeout(() => {
+          underline.classList.remove('scale-x-0');
+        }, 10);
+      } else {
+         
+        // Collapse underline to center
+        underline.classList.add('scale-x-0');
+        
+        setTimeout(() => {
+           
+          underline.classList.add('hidden');
+          underline.classList.remove('absolute');
+        }, 300); // match Tailwind duration
+      }
+    });
+  });
+});
+
+
