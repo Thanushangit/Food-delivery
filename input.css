@@ -20,6 +20,28 @@ html {
   @apply mx-auto p-3.5
 }
 
+
+@keyframes rotatee {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotater {
+  animation: rotatee 60s linear infinite;  /* run slowly, forever */
+  animation-play-state: running;
+}
+
+.rotater:hover {
+  animation-play-state: paused;  /* pause on hover */
+}
+
+
+
+
 @keyframes moveY {
   0% {
     transform: translateY(0);
