@@ -2,6 +2,11 @@
 
 @import "tailwindcss";
 
+
+html{
+  scroll-behavior: smooth;
+}
+
 @theme {
 
     --font-ibm: "IBM Plex Serif", serif;
