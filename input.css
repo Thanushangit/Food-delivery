@@ -3,29 +3,31 @@
 @import "tailwindcss";
 
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 @theme {
 
-    --font-ibm: "IBM Plex Serif", serif;
-    --font-cascadia: "Cascadia Code", sans-serif;
-    --color-primary:#fea115;
+  --font-ibm: "IBM Plex Serif", serif;
+  --font-cascadia: "Cascadia Code", sans-serif;
+  --color-primary: #fea115;
 
 }
 
-.container{
-    @apply mx-auto p-3.5
+.container {
+  @apply mx-auto p-3.5
 }
 
 @keyframes moveY {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-0.7rem);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -36,4 +38,13 @@ html{
   color: #fea115;
 }
 
+.gallerybtn {
+  color: white;
+  background: linear-gradient(to right, #fea115 50%, red 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
 
+.gallerybtn:hover {
+  background-position: left bottom;
+}
