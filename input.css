@@ -12,6 +12,7 @@ html {
   --font-ibm: "IBM Plex Serif", serif;
   --font-cascadia: "Cascadia Code", sans-serif;
   --color-primary: #fea115;
+ 
 
 }
 
@@ -48,3 +49,16 @@ html {
 .gallerybtn:hover {
   background-position: left bottom;
 }
+
+
+ /* Swiper  */
+ swiper-container {
+      --swiper-pagination-color: #fa9b0c; /* Active bullet color */
+      --swiper-pagination-bullet-inactive-color: #d1a869; /* Inactive bullets */
+      --swiper-pagination-bullet-inactive-opacity: 1;
+    }
+
+    swiper-container::part(button-prev),
+    swiper-container::part(button-next) {
+      color: #fea115;
+    }

@@ -34,6 +34,7 @@
     />
     <!-- output.css link  -->
     <link rel="stylesheet" href="./output.css" />
+
     <!-- favicon link  -->
     <link
       rel="shortcut icon"
@@ -43,6 +44,7 @@
     <!-- Title of the app -->
     <title>Platezy</title>
   </head>
+
   <body>
     <!-- header part -->
     <header class="bg-[#232736] w-full text-white fixed top-0 left-0 z-50">
@@ -87,7 +89,7 @@
             <li
               id="nav-link"
               title="click here"
-              class="cursor-pointer hover:text-primary duration-200 text-primary "
+              class="cursor-pointer hover:text-primary duration-200 text-primary"
             >
               <a href="#">Home</a>
             </li>
@@ -1462,201 +1464,495 @@
 
     <!-- our gallery  -->
     <section class="my-10 sm:my-20 w-full">
-      <h1 class="text-center text-3xl sm:text-4xl font-bold mb-3">Our Gallery</h1>
-      <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-0">
+      <h1 class="text-center text-3xl sm:text-4xl font-bold mb-3">
+        Our Gallery
+      </h1>
+      <div
+        class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-0"
+      >
+        <div class="relative h-96 md:h-[476px] overflow-hidden group">
+          <!-- Scalable background image -->
+          <div
+            class="h-full w-full bg-[url('./img/gallery-01.jpg')] bg-cover bg-center transition-transform duration-[2000ms] ease-in-out group-hover:scale-125"
+          ></div>
 
-            <div class="relative h-96 md:h-[476px] overflow-hidden group">
-              <!-- Scalable background image -->
-              <div
-                class="h-full w-full bg-[url('./img/gallery-01.jpg')] bg-cover bg-center transition-transform duration-[2000ms] ease-in-out group-hover:scale-125"
-              ></div>
-
-              <!-- Overlay that fades in -->
-              <div
-                class="absolute top-0 left-0 h-full w-full bg-transparent transition-colors ease-in-out duration-300 group-hover:bg-black/50 flex flex-col items-center justify-center"
+          <!-- Overlay that fades in -->
+          <div
+            class="absolute top-0 left-0 h-full w-full bg-transparent transition-colors ease-in-out duration-300 group-hover:bg-black/50 flex flex-col items-center justify-center"
+          >
+            <div
+              class="group-hover:block hidden transition-all duration-300 ease-in-out text-white font-semibold text-center space-y-5"
+            >
+              <p class="text-lg">Stuffed delight</p>
+              <h1 class="text-2xl">Spicy Burrito Wrap</h1>
+              <button
+                class="gallerybtn border-0 cursor-pointer py-2 px-4 uppercase transition-all duration-300 ease-in-out rounded-md"
               >
-                <div
-                  class="group-hover:block hidden transition-all duration-300 ease-in-out text-white font-semibold text-center space-y-5"
-                >
-                  <p class="text-lg">Stuffed delight</p>
-                  <h1 class="text-2xl">Spicy Burrito Wrap</h1>
-                  <button
-                    class="gallerybtn border-0 cursor-pointer py-2 px-4 uppercase transition-all duration-300 ease-in-out rounded-md"
+                view all collection
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative h-96 md:h-[476px] overflow-hidden group">
+          <!-- Scalable background image -->
+          <div
+            class="h-full w-full bg-[url('./img/gallery-02.jpg')] bg-cover bg-center transition-transform duration-[2000ms] ease-in-out group-hover:scale-125"
+          ></div>
+
+          <!-- Overlay that fades in -->
+          <div
+            class="absolute top-0 left-0 h-full w-full bg-transparent transition-colors ease-in-out duration-300 group-hover:bg-black/50 flex flex-col items-center justify-center"
+          >
+            <div
+              class="group-hover:block hidden transition-all duration-300 ease-in-out text-white font-semibold text-center space-y-5"
+            >
+              <p class="text-lg">Traditional flavor</p>
+              <h1 class="text-2xl">Classic Heritage Dish</h1>
+              <button
+                class="gallerybtn border-0 cursor-pointer py-2 px-4 uppercase transition-all duration-300 ease-in-out rounded-md"
+              >
+                view all collection
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative h-96 md:h-[476px] overflow-hidden group">
+          <!-- Scalable background image -->
+          <div
+            class="h-full w-full bg-[url('./img/gallery-03.jpg')] bg-cover bg-center transition-transform duration-[2000ms] ease-in-out group-hover:scale-125"
+          ></div>
+
+          <!-- Overlay that fades in -->
+          <div
+            class="absolute top-0 left-0 h-full w-full bg-transparent transition-colors ease-in-out duration-300 group-hover:bg-black/50 flex flex-col items-center justify-center"
+          >
+            <div
+              class="group-hover:block hidden transition-all duration-300 ease-in-out text-white font-semibold text-center space-y-5"
+            >
+              <p class="text-lg">Savory Street Noodles</p>
+              <h1 class="text-2xl">Quick meal</h1>
+              <button
+                class="gallerybtn border-0 cursor-pointer py-2 px-4 uppercase transition-all duration-300 ease-in-out rounded-md"
+              >
+                view all collection
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative h-96 md:h-[476px] overflow-hidden group">
+          <!-- Scalable background image -->
+          <div
+            class="h-full w-full bg-[url('./img/gallery-04.jpg')] bg-cover bg-center transition-transform duration-[2000ms] ease-in-out group-hover:scale-125"
+          ></div>
+
+          <!-- Overlay that fades in -->
+          <div
+            class="absolute top-0 left-0 h-full w-full bg-transparent transition-colors ease-in-out duration-300 group-hover:bg-black/50 flex flex-col items-center justify-center"
+          >
+            <div
+              class="group-hover:block hidden transition-all duration-300 ease-in-out text-white font-semibold text-center space-y-5"
+            >
+              <p class="text-lg">Party vibes</p>
+              <h1 class="text-2xl">Festive Feast Time</h1>
+              <button
+                class="gallerybtn border-0 cursor-pointer py-2 px-4 uppercase transition-all duration-300 ease-in-out rounded-md"
+              >
+                view all collection
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative h-96 md:h-[476px] overflow-hidden group">
+          <!-- Scalable background image -->
+          <div
+            class="h-full w-full bg-[url('./img/gallery-05.jpg')] bg-cover bg-center transition-transform duration-[2000ms] ease-in-out group-hover:scale-125"
+          ></div>
+
+          <!-- Overlay that fades in -->
+          <div
+            class="absolute top-0 left-0 h-full w-full bg-transparent transition-colors ease-in-out duration-300 group-hover:bg-black/50 flex flex-col items-center justify-center"
+          >
+            <div
+              class="group-hover:block hidden transition-all duration-300 ease-in-out text-white font-semibold text-center space-y-5"
+            >
+              <p class="text-lg">Juicy & tender</p>
+              <h1 class="text-2xl">Grilled Chicken Roast</h1>
+              <button
+                class="gallerybtn border-0 cursor-pointer py-2 px-4 uppercase transition-all duration-300 ease-in-out rounded-md"
+              >
+                view all collection
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative h-96 md:h-[476px] overflow-hidden group">
+          <!-- Scalable background image -->
+          <div
+            class="h-full w-full bg-[url('./img/gallery-06.jpg')] bg-cover bg-center transition-transform duration-[2000ms] ease-in-out group-hover:scale-125"
+          ></div>
+
+          <!-- Overlay that fades in -->
+          <div
+            class="absolute top-0 left-0 h-full w-full bg-transparent transition-colors ease-in-out duration-300 group-hover:bg-black/50 flex flex-col items-center justify-center"
+          >
+            <div
+              class="group-hover:block hidden transition-all duration-300 ease-in-out text-white font-semibold text-center space-y-5"
+            >
+              <p class="text-lg">Melty goodness</p>
+              <h1 class="text-2xl">Cheesy Crust Pizza</h1>
+              <button
+                class="gallerybtn border-0 cursor-pointer py-2 px-4 uppercase transition-all duration-300 ease-in-out rounded-md"
+              >
+                view all collection
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative h-96 md:h-[476px] overflow-hidden group">
+          <!-- Scalable background image -->
+          <div
+            class="h-full w-full bg-[url('./img/gallery-07.jpg')] bg-cover bg-center transition-transform duration-[2000ms] ease-in-out group-hover:scale-125"
+          ></div>
+
+          <!-- Overlay that fades in -->
+          <div
+            class="absolute top-0 left-0 h-full w-full bg-transparent transition-colors ease-in-out duration-300 group-hover:bg-black/50 flex flex-col items-center justify-center"
+          >
+            <div
+              class="group-hover:block hidden transition-all duration-300 ease-in-out text-white font-semibold text-center space-y-5"
+            >
+              <p class="text-lg">Hearty bite</p>
+              <h1 class="text-2xl">Stacked Beef Burger</h1>
+              <button
+                class="gallerybtn border-0 cursor-pointer py-2 px-4 uppercase transition-all duration-300 ease-in-out rounded-md"
+              >
+                view all collection
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative h-96 md:h-[476px] overflow-hidden group">
+          <!-- Scalable background image -->
+          <div
+            class="h-full w-full bg-[url('./img/gallery-08.jpg')] bg-cover bg-center transition-transform duration-[2000ms] ease-in-out group-hover:scale-125"
+          ></div>
+
+          <!-- Overlay that fades in -->
+          <div
+            class="absolute top-0 left-0 h-full w-full bg-transparent transition-colors ease-in-out duration-300 group-hover:bg-black/50 flex flex-col items-center justify-center"
+          >
+            <div
+              class="group-hover:block hidden transition-all duration-300 ease-in-out text-white font-semibold text-center space-y-5"
+            >
+              <p class="text-lg">Creamy layers</p>
+              <h1 class="text-2xl">Sweet Celebration Cake</h1>
+              <button
+                class="gallerybtn border-0 cursor-pointer py-2 px-4 uppercase transition-all duration-300 ease-in-out rounded-md"
+              >
+                view all collection
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swiper -->
+    <section class="my-15 sm:my-25 w-full">
+      <h1 class="font-bold text-4xl text-center mb-3">Our Valued Customers!</h1>
+      <div class="container relative h-full">
+        <swiper-container
+          id="mySwiper"
+          class="h-full w-full"
+          pagination="true"
+          pagination-clickable="true"
+          navigation="true"
+          space-between="30"
+          autoplay="true"
+          centered-slides="true"
+          autoplay-delay="2000"
+          autoplay-disable-on-interaction="false"
+        >
+          <swiper-slide class="h-full w-full">
+            <div
+              class="group h-full w-2/3 mx-auto flex flex-col md:flex-row justify-center items-center md:justify-between p-5 gap-5 border-b-2 border-b-gray-300 shadow-lg group-hover:shadow-2xl transition-shadow duration-300 cursor-pointer"
+            >
+              <!-- image  -->
+              <div
+                title="Hi i'm Trisha Krishnan"
+                class="rounded-full h-35 w-35 group-hover:outline-4 group-hover:outline-primary transition-all duration-200 cursor-pointer outline-offset-8 overflow-hidden"
+              >
+                <img
+                  class="rounded-full h-full w-full object-center object-cover"
+                  src="https://lightwallpapers.com/downloads/trisha-krishnan-wallpaper-hd-Wallpapers/14.trisha-krishnan-ponniyin-selvan1-prereleasethumb.jpg"
+                  alt="customer-01"
+                />
+              </div>
+
+              <!-- content  -->
+              <div class="flex flex-col flex-1 p-3 space-y-2">
+                <div>
+                  <h1 class="font-cascadia font-bold text-2xl">
+                    Trisha Krishnan
+                  </h1>
+                  <h5 class="text-red-500 text-lg">Actress</h5>
+                </div>
+                <p class="text-gray-800">
+                  A beautiful, cozy, and inviting space with food that speaks to
+                  the soul. Every dish is crafted thoughtfully with care,
+                  passion, and elegance. The service is warm, attentive, and
+                  welcoming.
+                </p>
+
+                <div class="flex gap-3">
+                  <div
+                    title="Whatsapp"
+                    class="w-8 h-8 rounded-full bg-red-500 cursor-pointer hover:bg-transparent hover:text-primary hover:border-2 hover:border-primary transition-all duration-300 text-gray-300 flex items-center justify-center text-xl"
                   >
-                    view all collection
-                  </button>
+                    <i class="ri-whatsapp-line"></i>
+                  </div>
+                  <div
+                    title="Telegram"
+                    class="w-8 h-8 rounded-full bg-red-500 cursor-pointer hover:bg-transparent hover:text-primary hover:border-2 hover:border-primary transition-all duration-300 text-gray-300 flex items-center justify-center text-xl"
+                  >
+                    <i class="ri-telegram-2-line"></i>
+                  </div>
+                  <div
+                    title="X"
+                    class="w-8 h-8 rounded-full bg-red-500 cursor-pointer hover:bg-transparent hover:text-primary hover:border-2 hover:border-primary transition-all duration-300 text-gray-300 flex items-center justify-center text-xl"
+                  >
+                    <i class="ri-twitter-x-line"></i>
+                  </div>
                 </div>
               </div>
             </div>
+          </swiper-slide>
 
-             <div class="relative h-96 md:h-[476px] overflow-hidden group">
-              <!-- Scalable background image -->
+          <swiper-slide class="h-full w-full">
+            <div
+              class="group h-full w-2/3 mx-auto flex flex-col md:flex-row justify-center items-center md:justify-between p-5 gap-5 border-b-2 border-b-gray-300 shadow-lg group-hover:shadow-2xl transition-shadow duration-300 cursor-pointer"
+            >
+              <!-- image  -->
               <div
-                class="h-full w-full bg-[url('./img/gallery-02.jpg')] bg-cover bg-center transition-transform duration-[2000ms] ease-in-out group-hover:scale-125"
-              ></div>
-
-              <!-- Overlay that fades in -->
-              <div
-                class="absolute top-0 left-0 h-full w-full bg-transparent transition-colors ease-in-out duration-300 group-hover:bg-black/50 flex flex-col items-center justify-center"
+                title="Hi i'm Jonathan Reed"
+                class="rounded-full h-35 w-35 group-hover:outline-4 group-hover:outline-primary transition-all duration-200 cursor-pointer outline-offset-8 overflow-hidden"
               >
-                <div
-                  class="group-hover:block hidden transition-all duration-300 ease-in-out text-white font-semibold text-center space-y-5"
-                >
-                  <p class="text-lg">Traditional flavor</p>
-                  <h1 class="text-2xl">Classic Heritage Dish</h1>
-                  <button
-                    class="gallerybtn border-0 cursor-pointer py-2 px-4 uppercase transition-all duration-300 ease-in-out rounded-md"
+                <img
+                  class="rounded-full h-full w-full object-center object-cover"
+                  src="https://images.unsplash.com/photo-1566753323558-f4e0952af115?q=80&w=1442&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="customer-02"
+                />
+              </div>
+
+              <!-- content  -->
+              <div class="flex flex-col flex-1 p-3 space-y-2">
+                <div>
+                  <h1 class="font-cascadia font-bold text-2xl">
+                    Jonathan Reed
+                  </h1>
+                  <h5 class="text-red-500 text-lg">Marketing Executive</h5>
+                </div>
+                <p class="text-gray-800">
+                  Nestled in a charming corner of the city, this restaurant
+                  offers a serene ambiance that puts you at ease. The aroma of
+                  freshly prepared dishes fills the air, promising a delightful
+                  culinary journey.
+                </p>
+
+                <div class="flex gap-3">
+                  <div
+                    title="Whatsapp"
+                    class="w-8 h-8 rounded-full bg-red-500 cursor-pointer hover:bg-transparent hover:text-primary hover:border-2 hover:border-primary transition-all duration-300 text-gray-300 flex items-center justify-center text-xl"
                   >
-                    view all collection
-                  </button>
+                    <i class="ri-whatsapp-line"></i>
+                  </div>
+                  <div
+                    title="Telegram"
+                    class="w-8 h-8 rounded-full bg-red-500 cursor-pointer hover:bg-transparent hover:text-primary hover:border-2 hover:border-primary transition-all duration-300 text-gray-300 flex items-center justify-center text-xl"
+                  >
+                    <i class="ri-telegram-2-line"></i>
+                  </div>
+                  <div
+                    title="X"
+                    class="w-8 h-8 rounded-full bg-red-500 cursor-pointer hover:bg-transparent hover:text-primary hover:border-2 hover:border-primary transition-all duration-300 text-gray-300 flex items-center justify-center text-xl"
+                  >
+                    <i class="ri-twitter-x-line"></i>
+                  </div>
                 </div>
               </div>
             </div>
+          </swiper-slide>
 
-             <div class="relative h-96 md:h-[476px] overflow-hidden group">
-              <!-- Scalable background image -->
+          <swiper-slide class="h-full w-full">
+            <div
+              class="group h-full w-2/3 mx-auto flex flex-col md:flex-row justify-center items-center md:justify-between p-5 gap-5 border-b-2 border-b-gray-300 shadow-lg group-hover:shadow-2xl transition-shadow duration-300 cursor-pointer"
+            >
+              <!-- image  -->
               <div
-                class="h-full w-full bg-[url('./img/gallery-03.jpg')] bg-cover bg-center transition-transform duration-[2000ms] ease-in-out group-hover:scale-125"
-              ></div>
-
-              <!-- Overlay that fades in -->
-              <div
-                class="absolute top-0 left-0 h-full w-full bg-transparent transition-colors ease-in-out duration-300 group-hover:bg-black/50 flex flex-col items-center justify-center"
+                title="Hi i'm Dinesh Kumar"
+                class="rounded-full h-35 w-35 group-hover:outline-4 group-hover:outline-primary transition-all duration-200 cursor-pointer outline-offset-8 overflow-hidden"
               >
-                <div
-                  class="group-hover:block hidden transition-all duration-300 ease-in-out text-white font-semibold text-center space-y-5"
-                >
-                  <p class="text-lg">Savory Street Noodles</p>
-                  <h1 class="text-2xl">Quick meal</h1>
-                  <button
-                    class="gallerybtn border-0 cursor-pointer py-2 px-4 uppercase transition-all duration-300 ease-in-out rounded-md"
+                <img
+                  class="rounded-full h-full w-full object-center object-cover"
+                  src="https://t4.ftcdn.net/jpg/02/14/74/61/360_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg"
+                  alt="customer-03"
+                />
+              </div>
+
+              <!-- content  -->
+              <div class="flex flex-col flex-1 p-3 space-y-2">
+                <div>
+                  <h1 class="font-cascadia font-bold text-2xl">Dinesh Kumar</h1>
+                  <h5 class="text-red-500 text-lg">Photographer</h5>
+                </div>
+                <p class="text-gray-800">
+                  This place is my go-to after a long shoot. The service is
+                  quick, and the food has a homemade feel that's hard to find
+                  elsewhere. The taste reminds me of comfort and warmth, making
+                  it my favorite.
+                </p>
+
+                <div class="flex gap-3">
+                  <div
+                    title="Whatsapp"
+                    class="w-8 h-8 rounded-full bg-red-500 cursor-pointer hover:bg-transparent hover:text-primary hover:border-2 hover:border-primary transition-all duration-300 text-gray-300 flex items-center justify-center text-xl"
                   >
-                    view all collection
-                  </button>
+                    <i class="ri-whatsapp-line"></i>
+                  </div>
+                  <div
+                    title="Telegram"
+                    class="w-8 h-8 rounded-full bg-red-500 cursor-pointer hover:bg-transparent hover:text-primary hover:border-2 hover:border-primary transition-all duration-300 text-gray-300 flex items-center justify-center text-xl"
+                  >
+                    <i class="ri-telegram-2-line"></i>
+                  </div>
+                  <div
+                    title="X"
+                    class="w-8 h-8 rounded-full bg-red-500 cursor-pointer hover:bg-transparent hover:text-primary hover:border-2 hover:border-primary transition-all duration-300 text-gray-300 flex items-center justify-center text-xl"
+                  >
+                    <i class="ri-twitter-x-line"></i>
+                  </div>
                 </div>
               </div>
             </div>
+          </swiper-slide>
 
-             <div class="relative h-96 md:h-[476px] overflow-hidden group">
-              <!-- Scalable background image -->
+          <swiper-slide class="h-full w-full">
+            <div
+              class="group h-full w-2/3 mx-auto flex flex-col md:flex-row justify-center items-center md:justify-between p-5 gap-5 border-b-2 border-b-gray-300 shadow-lg group-hover:shadow-2xl transition-shadow duration-300 cursor-pointer"
+            >
+              <!-- image  -->
               <div
-                class="h-full w-full bg-[url('./img/gallery-04.jpg')] bg-cover bg-center transition-transform duration-[2000ms] ease-in-out group-hover:scale-125"
-              ></div>
-
-              <!-- Overlay that fades in -->
-              <div
-                class="absolute top-0 left-0 h-full w-full bg-transparent transition-colors ease-in-out duration-300 group-hover:bg-black/50 flex flex-col items-center justify-center"
+                title="Hi i'm Priya Nandini"
+                class="rounded-full h-35 w-35 group-hover:outline-4 group-hover:outline-primary transition-all duration-200 cursor-pointer outline-offset-8 overflow-hidden"
               >
-                <div
-                  class="group-hover:block hidden transition-all duration-300 ease-in-out text-white font-semibold text-center space-y-5"
-                >
-                  <p class="text-lg">Party vibes</p>
-                  <h1 class="text-2xl">Festive Feast Time</h1>
-                  <button
-                    class="gallerybtn border-0 cursor-pointer py-2 px-4 uppercase transition-all duration-300 ease-in-out rounded-md"
+                <img
+                  class="rounded-full h-full w-full object-top object-cover"
+                  src="https://images.unsplash.com/photo-1627161683077-e34782c24d81?q=80&w=1406&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="customer-04"
+                />
+              </div>
+
+              <!-- content  -->
+              <div class="flex flex-col flex-1 p-3 space-y-2">
+                <div>
+                  <h1 class="font-cascadia font-bold text-2xl">
+                    Priya Nandini
+                  </h1>
+                  <h5 class="text-red-500 text-lg">Nutritionist</h5>
+                </div>
+                <p class="text-gray-800">
+                  Healthy options with great taste! It's hard to find places
+                  that balance flavor, nutrition, and freshness so well, making
+                  every meal satisfying, wholesome, and guilt-free for a perfect
+                  experience.
+                </p>
+
+                <div class="flex gap-3">
+                  <div
+                    title="Whatsapp"
+                    class="w-8 h-8 rounded-full bg-red-500 cursor-pointer hover:bg-transparent hover:text-primary hover:border-2 hover:border-primary transition-all duration-300 text-gray-300 flex items-center justify-center text-xl"
                   >
-                    view all collection
-                  </button>
+                    <i class="ri-whatsapp-line"></i>
+                  </div>
+                  <div
+                    title="Telegram"
+                    class="w-8 h-8 rounded-full bg-red-500 cursor-pointer hover:bg-transparent hover:text-primary hover:border-2 hover:border-primary transition-all duration-300 text-gray-300 flex items-center justify-center text-xl"
+                  >
+                    <i class="ri-telegram-2-line"></i>
+                  </div>
+                  <div
+                    title="X"
+                    class="w-8 h-8 rounded-full bg-red-500 cursor-pointer hover:bg-transparent hover:text-primary hover:border-2 hover:border-primary transition-all duration-300 text-gray-300 flex items-center justify-center text-xl"
+                  >
+                    <i class="ri-twitter-x-line"></i>
+                  </div>
                 </div>
               </div>
             </div>
+          </swiper-slide>
 
-             <div class="relative h-96 md:h-[476px] overflow-hidden group">
-              <!-- Scalable background image -->
+          <swiper-slide class="h-full w-full">
+            <div
+              class="group h-full w-2/3 mx-auto flex flex-col md:flex-row justify-center items-center md:justify-between p-5 gap-5 border-b-2 border-b-gray-300 shadow-lg group-hover:shadow-2xl transition-shadow duration-300 cursor-pointer"
+            >
+              <!-- image  -->
               <div
-                class="h-full w-full bg-[url('./img/gallery-05.jpg')] bg-cover bg-center transition-transform duration-[2000ms] ease-in-out group-hover:scale-125"
-              ></div>
-
-              <!-- Overlay that fades in -->
-              <div
-                class="absolute top-0 left-0 h-full w-full bg-transparent transition-colors ease-in-out duration-300 group-hover:bg-black/50 flex flex-col items-center justify-center"
+                title="Hi i'm Walter Harris"
+                class="rounded-full h-35 w-35 group-hover:outline-4 group-hover:outline-primary transition-all duration-200 cursor-pointer outline-offset-8 overflow-hidden"
               >
-                <div
-                  class="group-hover:block hidden transition-all duration-300 ease-in-out text-white font-semibold text-center space-y-5"
-                >
-                  <p class="text-lg">Juicy & tender</p>
-                  <h1 class="text-2xl">Grilled Chicken Roast</h1>
-                  <button
-                    class="gallerybtn border-0 cursor-pointer py-2 px-4 uppercase transition-all duration-300 ease-in-out rounded-md"
+                <img
+                  class="rounded-full h-full w-full object-center object-cover"
+                  src="https://images.unsplash.com/photo-1590074251929-76f7c465a3bd?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="customer-05"
+                />
+              </div>
+
+              <!-- content  -->
+              <div class="flex flex-col flex-1 p-3 space-y-2">
+                <div>
+                  <h1 class="font-cascadia font-bold text-2xl">
+                    Walter Harris
+                  </h1>
+                  <h5 class="text-red-500 text-lg">Retired Librarian</h5>
+                </div>
+                <p class="text-gray-800">
+                  Healthy options with great taste! It's rare to find places
+                  that balance flavor and freshness so well. It reminds me of
+                  the old days when food was made with care and love, bringing
+                  back fond memories.
+                </p>
+
+                <div class="flex gap-3">
+                  <div
+                    title="Whatsapp"
+                    class="w-8 h-8 rounded-full bg-red-500 cursor-pointer hover:bg-transparent hover:text-primary hover:border-2 hover:border-primary transition-all duration-300 text-gray-300 flex items-center justify-center text-xl"
                   >
-                    view all collection
-                  </button>
+                    <i class="ri-whatsapp-line"></i>
+                  </div>
+                  <div
+                    title="Telegram"
+                    class="w-8 h-8 rounded-full bg-red-500 cursor-pointer hover:bg-transparent hover:text-primary hover:border-2 hover:border-primary transition-all duration-300 text-gray-300 flex items-center justify-center text-xl"
+                  >
+                    <i class="ri-telegram-2-line"></i>
+                  </div>
+                  <div
+                    title="X"
+                    class="w-8 h-8 rounded-full bg-red-500 cursor-pointer hover:bg-transparent hover:text-primary hover:border-2 hover:border-primary transition-all duration-300 text-gray-300 flex items-center justify-center text-xl"
+                  >
+                    <i class="ri-twitter-x-line"></i>
+                  </div>
                 </div>
               </div>
             </div>
-
-             <div class="relative h-96 md:h-[476px] overflow-hidden group">
-              <!-- Scalable background image -->
-              <div
-                class="h-full w-full bg-[url('./img/gallery-06.jpg')] bg-cover bg-center transition-transform duration-[2000ms] ease-in-out group-hover:scale-125"
-              ></div>
-
-              <!-- Overlay that fades in -->
-              <div
-                class="absolute top-0 left-0 h-full w-full bg-transparent transition-colors ease-in-out duration-300 group-hover:bg-black/50 flex flex-col items-center justify-center"
-              >
-                <div
-                  class="group-hover:block hidden transition-all duration-300 ease-in-out text-white font-semibold text-center space-y-5"
-                >
-                  <p class="text-lg">Melty goodness</p>
-                  <h1 class="text-2xl">Cheesy Crust Pizza</h1>
-                  <button
-                    class="gallerybtn border-0 cursor-pointer py-2 px-4 uppercase transition-all duration-300 ease-in-out rounded-md"
-                  >
-                    view all collection
-                  </button>
-                </div>
-              </div>
-            </div>
-
-             <div class="relative h-96 md:h-[476px] overflow-hidden group">
-              <!-- Scalable background image -->
-              <div
-                class="h-full w-full bg-[url('./img/gallery-07.jpg')] bg-cover bg-center transition-transform duration-[2000ms] ease-in-out group-hover:scale-125"
-              ></div>
-
-              <!-- Overlay that fades in -->
-              <div
-                class="absolute top-0 left-0 h-full w-full bg-transparent transition-colors ease-in-out duration-300 group-hover:bg-black/50 flex flex-col items-center justify-center"
-              >
-                <div
-                  class="group-hover:block hidden transition-all duration-300 ease-in-out text-white font-semibold text-center space-y-5"
-                >
-                  <p class="text-lg">Hearty bite</p>
-                  <h1 class="text-2xl">Stacked Beef Burger</h1>
-                  <button
-                    class="gallerybtn border-0 cursor-pointer py-2 px-4 uppercase transition-all duration-300 ease-in-out rounded-md"
-                  >
-                    view all collection
-                  </button>
-                </div>
-              </div>
-            </div>
-
-             <div class="relative h-96 md:h-[476px] overflow-hidden group">
-              <!-- Scalable background image -->
-              <div
-                class="h-full w-full bg-[url('./img/gallery-08.jpg')] bg-cover bg-center transition-transform duration-[2000ms] ease-in-out group-hover:scale-125"
-              ></div>
-
-              <!-- Overlay that fades in -->
-              <div
-                class="absolute top-0 left-0 h-full w-full bg-transparent transition-colors ease-in-out duration-300 group-hover:bg-black/50 flex flex-col items-center justify-center"
-              >
-                <div
-                  class="group-hover:block hidden transition-all duration-300 ease-in-out text-white font-semibold text-center space-y-5"
-                >
-                  <p class="text-lg">Creamy layers</p>
-                  <h1 class="text-2xl">Sweet Celebration Cake</h1>
-                  <button
-                    class="gallerybtn border-0 cursor-pointer py-2 px-4 uppercase transition-all duration-300 ease-in-out rounded-md"
-                  >
-                    view all collection
-                  </button>
-                </div>
-              </div>
-            </div>
-            
+          </swiper-slide>
+        </swiper-container>
       </div>
     </section>
 
@@ -1850,6 +2146,9 @@
         </div>
       </div>
     </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
     <!-- my external js link -->
     <script src="./main.js"></script>

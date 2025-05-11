@@ -63,3 +63,14 @@ sections.forEach(section => {
 });
 
 
+// swiper 
+
+const swiperEl = document.getElementById('mySwiper');
+
+  swiperEl.addEventListener('mouseenter', () => {
+    swiperEl.swiper.autoplay.stop();
+  });
+
+  swiperEl.addEventListener('mouseleave', () => {
+    swiperEl.swiper.autoplay.start();
+  });
