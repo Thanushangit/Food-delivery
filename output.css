@@ -616,9 +616,6 @@
   .bg-transparent {
     background-color: transparent;
   }
-  .bg-\[url\(\'\.\/img\/flash-offer-bg\.jpg\'\)\] {
-    background-image: url('./img/flash-offer-bg.jpg');
-  }
   .bg-\[url\(\'\.\/img\/gallery-01\.jpg\'\)\] {
     background-image: url('./img/gallery-01.jpg');
   }
@@ -645,6 +642,36 @@
   }
   .bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1726241966430-df9f0ce0023c\?q\=80\&w\=1470\&auto\=format\&fit\=crop\&ixlib\=rb-4\.1\.0\&ixid\=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA\%3D\%3D\'\)\] {
     background-image: url('https://images.unsplash.com/photo-1726241966430-df9f0ce0023c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  }
+  .bg-\[url\(\'https\:\/\/res\.cloudinary\.com\/thanushan\/image\/upload\/v1747015993\/gallery-01_xr4di7\.webp\'\)\] {
+    background-image: url('https://res.cloudinary.com/thanushan/image/upload/v1747015993/gallery-01_xr4di7.webp');
+  }
+  .bg-\[url\(\'https\:\/\/res\.cloudinary\.com\/thanushan\/image\/upload\/v1747015998\/flash-offer-bg_pmmrgl\.webp\'\)\] {
+    background-image: url('https://res.cloudinary.com/thanushan/image/upload/v1747015998/flash-offer-bg_pmmrgl.webp');
+  }
+  .bg-\[url\(\'https\:\/\/res\.cloudinary\.com\/thanushan\/image\/upload\/v1747016000\/gallery-03_tzbqbw\.webp\'\)\] {
+    background-image: url('https://res.cloudinary.com/thanushan/image/upload/v1747016000/gallery-03_tzbqbw.webp');
+  }
+  .bg-\[url\(\'https\:\/\/res\.cloudinary\.com\/thanushan\/image\/upload\/v1747016005\/gallery-05_f8xp0f\.webp\'\)\] {
+    background-image: url('https://res.cloudinary.com/thanushan/image/upload/v1747016005/gallery-05_f8xp0f.webp');
+  }
+  .bg-\[url\(\'https\:\/\/res\.cloudinary\.com\/thanushan\/image\/upload\/v1747016014\/gallery-02_crmtsz\.webp\'\)\] {
+    background-image: url('https://res.cloudinary.com/thanushan/image/upload/v1747016014/gallery-02_crmtsz.webp');
+  }
+  .bg-\[url\(\'https\:\/\/res\.cloudinary\.com\/thanushan\/image\/upload\/v1747016017\/gallery-08_zh4xhm\.webp\'\)\] {
+    background-image: url('https://res.cloudinary.com/thanushan/image/upload/v1747016017/gallery-08_zh4xhm.webp');
+  }
+  .bg-\[url\(\'https\:\/\/res\.cloudinary\.com\/thanushan\/image\/upload\/v1747016024\/newsletter-bg_zvgzxv\.webp\'\)\] {
+    background-image: url('https://res.cloudinary.com/thanushan/image/upload/v1747016024/newsletter-bg_zvgzxv.webp');
+  }
+  .bg-\[url\(\'https\:\/\/res\.cloudinary\.com\/thanushan\/image\/upload\/v1747016027\/gallery-06_g6eaf0\.webp\'\)\] {
+    background-image: url('https://res.cloudinary.com/thanushan/image/upload/v1747016027/gallery-06_g6eaf0.webp');
+  }
+  .bg-\[url\(\'https\:\/\/res\.cloudinary\.com\/thanushan\/image\/upload\/v1747016029\/gallery-07_q2tjn0\.webp\'\)\] {
+    background-image: url('https://res.cloudinary.com/thanushan/image/upload/v1747016029/gallery-07_q2tjn0.webp');
+  }
+  .bg-\[url\(\'https\:\/\/res\.cloudinary\.com\/thanushan\/image\/upload\/v1747016032\/gallery-04_h6tzaj\.webp\'\)\] {
+    background-image: url('https://res.cloudinary.com/thanushan/image/upload/v1747016032/gallery-04_h6tzaj.webp');
   }
   .bg-cover {
     background-size: cover;
@@ -1191,11 +1218,6 @@
       width: calc(var(--spacing) * 10);
     }
   }
-  .md\:w-10\/12 {
-    @media (width >= 48rem) {
-      width: calc(10/12 * 100%);
-    }
-  }
   .md\:w-15 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 15);
@@ -1315,19 +1337,9 @@
       height: calc(var(--spacing) * 15);
     }
   }
-  .lg\:w-1\/12 {
-    @media (width >= 64rem) {
-      width: calc(1/12 * 100%);
-    }
-  }
   .lg\:w-9\/12 {
     @media (width >= 64rem) {
       width: calc(9/12 * 100%);
-    }
-  }
-  .lg\:w-10\/12 {
-    @media (width >= 64rem) {
-      width: calc(10/12 * 100%);
     }
   }
   .lg\:w-15 {
