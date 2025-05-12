@@ -87,7 +87,7 @@ const swiperEl = document.getElementById('mySwiper');
     reset:false
   })
 
-  sr.reveal(`.hero_text`);
+  sr.reveal(`.hero_text,.cart_heading`);
   sr.reveal(`.hero_image`,{delay:500, scale:0.5});
   sr.reveal(`.service_card,.food_item`,{interval:100,delay:200});
   sr.reveal(`.mobile,.newsletter_bg`);
