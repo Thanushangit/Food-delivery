@@ -77,25 +77,28 @@ const swiperEl = document.getElementById('mySwiper');
 
 
 
+
+
+
   // animatin 
 
-  const sr =ScrollReveal({
-    origin: "top",
-    distance:"60px",
-    duration:"2500",
-    delay:"300",
-    reset:false
-  })
+  // const sr =ScrollReveal({
+  //   origin: "top",
+  //   distance:"60px",
+  //   duration:"2500",
+  //   delay:"300",
+  //   reset:false
+  // })
 
-  sr.reveal(`.hero_text,.cart_heading`);
-  sr.reveal(`.hero_image`,{delay:500, scale:0.5});
-  sr.reveal(`.service_card,.food_item`,{interval:100,delay:200});
-  sr.reveal(`.mobile,.newsletter_bg`);
-  sr.reveal(`.mobile_content`,{origin:"left"});
-  sr.reveal(`.food_item_container`,{origin:"left",delay:"200"});
-   sr.reveal(`.footer`,{origin:"bottom",duration:2000,delay:200,mobile:false});
-   sr.reveal(`.gallery_item`,{scale:0.5,interval:100});
-   sr.reveal(`.customer_container`,{duration:"2000"});
-     sr.reveal(`.dishes_item`,{interval:100,delay:200});
-      sr.reveal(`.newsletter_text`,{origin:"bottom",duration:3500,delay:500,mobile:false});
+  // sr.reveal(`.hero_text,.cart_heading`);
+  // sr.reveal(`.hero_image`,{delay:500, scale:0.5});
+  // sr.reveal(`.service_card,.food_item`,{interval:100,delay:200});
+  // sr.reveal(`.mobile,.newsletter_bg`);
+  // sr.reveal(`.mobile_content`,{origin:"left"});
+  // sr.reveal(`.food_item_container`,{origin:"left",delay:"200"});
+  //  sr.reveal(`.footer`,{origin:"bottom",duration:2000,delay:200,mobile:false});
+  //  sr.reveal(`.gallery_item`,{scale:0.5,interval:100});
+  //  sr.reveal(`.customer_container`,{duration:"2000"});
+  //    sr.reveal(`.dishes_item`,{interval:100,delay:200});
+  //     sr.reveal(`.newsletter_text`,{origin:"bottom",duration:3500,delay:500,mobile:false});
   
