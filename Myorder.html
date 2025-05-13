@@ -135,7 +135,140 @@
       </nav>
     </header>
 
-   
+    <section class="flex flex-col items-center justify-center mt-20 sm:mt-15">
+      <h1 class="font-ibm text-3xl md:text-4xl sm:mt-12">Your order status</h1>
+
+      <!-- order cancel  -->
+
+      <div
+        class="container w-full h-ful hidden flex flex-col items-center justify-center text-center space-y-3"
+      >
+        <div
+          class="mb-5 w-44 h-44 rounded-full bg-[#f8f1f2] mx-auto flex items-center justify-center"
+        >
+          <div
+            class="w-32 h-32 rounded-full bg-[#e01d48] flex items-center justify-center text-white font-bold text-6xl"
+          >
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        <h1 class="text-[#e01d48] text-2xl md:text-3xl font-bold">
+          Your Order Cancelled by Restaurant.
+        </h1>
+        <p
+          class="text-lg md:text-xl text-gray-600 text-center max-w-xl mx-auto"
+        >
+          We're sorry! This order was cancelled by the restaurant due to
+          unforeseen circumstances such as item unavailability or operational
+          issues. You have not been charged. Thank you for your understanding!
+        </p>
+        <a class="w-full md:w-sm" title="Go to my order page" href="./Myorder.html"
+          ><div
+            class="w-full md:w-sm sm:py-2 py-3 px-6 mb-2 bg-primary hover:border hover:text-primary hover:bg-transparent duration-300 transition rounded-md mx-auto text-white font-semibold mt-8"
+          >
+            Try again
+          </div></a
+        >
+      </div>
+
+      <!-- order deliverd  -->
+
+      <div
+        class="container w-full mt-5 h-ful hidden flex flex-col items-center justify-center text-center space-y-1"
+      >
+        <div
+          class="mb-5 w-44 h-44 rounded-full bg-[#f8f1f2] mx-auto flex items-center justify-center"
+        >
+          <img src="img/order-deliverd.svg" alt="order-deliverd" />
+        </div>
+        <h1 class="text-green-600 text-2xl md:text-3xl font-bold">
+          Your Order Was Delivered Successfully!
+        </h1>
+        <p
+          class="text-lg md:text-xl text-gray-600 text-center max-w-xl mx-auto"
+        >
+          Thank you for your order! Your food has been delivered successfully.
+          We hope you enjoyed your meal and look forward to serving you again
+          soon.
+        </p>
+        <a
+          class="w-full md:w-sm"
+          title="Go to my order page"
+          href="./Myorder.html"
+          ><div
+            class="w-full md:w-sm sm:py-2 py-3 px-6 mb-2 bg-primary hover:border hover:text-primary hover:bg-transparent duration-300 transition rounded-md mx-auto text-white font-semibold mt-8"
+          >
+            Order more
+          </div></a
+        >
+      </div>
+
+      <!-- order on the way  -->
+
+      <div
+        class="container w-full mt-5 h-ful hidden flex flex-col items-center justify-center text-center space-y-1"
+      >
+        <div class="bg-[#f7f3ed] overflow-hidden h-44 w-44 rounded-full p-5">
+          <img
+            class="w-full h-full object-cover object-center scale-x-[-1]"
+            src="./img/bike.png"
+            alt=""
+          />
+        </div>
+
+        <h1 class="text-yellow-600 text-2xl md:text-3xl font-bold">
+          Your Order Is On The Way!
+        </h1>
+        <p
+          class="text-lg md:text-xl text-gray-600 text-center max-w-xl mx-auto"
+        >
+          Great news! Your food is on its way and will be delivered shortly. Sit
+          tight and get ready to enjoy a delicious meal prepared just for you.
+        </p>
+        <a
+          class="w-full md:w-sm"
+          title="Go to my order page"
+          href="./Myorder.html"
+          ><div
+            class="w-full md:w-sm sm:py-2 py-3 px-6 mb-2 bg-primary hover:border hover:text-primary hover:bg-transparent duration-300 transition rounded-md mx-auto text-white font-semibold mt-4"
+          >
+            Order more
+          </div></a
+        >
+      </div>
+
+      <!-- order is empty  -->
+
+      <div
+        class="container w-full mt-5 h-ful flex flex-col items-center justify-center text-center space-y-3"
+      >
+        <div class="overflow-hidden p-5">
+          <img
+            class="w-72 object-cover object-center scale-x-[-1]"
+            src="./img/no-order.PNG"
+            alt="order is empty"
+            loading="lazy"
+          />
+        </div>
+
+        <h1 class="text-yellow-600 text-2xl md:text-3xl font-bold">
+          No Orders Yet
+        </h1>
+        <p
+          class="text-lg md:text-xl text-gray-600 text-center max-w-xl mx-auto"
+        >
+          You haven't placed any orders yet. Browse our menu and add something tasty to your cart to get started!
+        </p>
+        <a class="w-full md:w-sm" title="order food" href="./index.html"
+          ><div
+            class="flex items-center justify-center gap-2 w-full md:w-sm sm:py-2 py-3 px-6 mb-2 bg-primary hover:border hover:text-primary hover:bg-transparent duration-300 transition rounded-md mx-auto text-white font-semibold mt-4"
+          >
+            <i class="ri-arrow-left-long-fill"></i>
+            <p>Order Now</p>
+          </div></a
+        >
+      </div>
+    </section>
 
     <!-- my external js link -->
     <script src="./main.js"></script>
