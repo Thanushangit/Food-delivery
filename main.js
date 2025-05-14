@@ -92,9 +92,9 @@ const swiperEl = document.getElementById('mySwiper');
 
   sr.reveal(`.hero_text,.cart_heading`);
   sr.reveal(`.hero_image`,{delay:500, scale:0.5});
-  sr.reveal(`.service_card,.food_item`,{interval:100,delay:200});
+  sr.reveal(`.service_card,.food_item,`,{interval:100,delay:200});
   sr.reveal(`.mobile,.newsletter_bg`);
-  sr.reveal(`.mobile_content`,{origin:"left"});
+  sr.reveal(`.mobile_content,`,{origin:"left"});
   sr.reveal(`.food_item_container`,{origin:"left",delay:"200"});
    sr.reveal(`.footer`,{origin:"bottom",duration:2000,delay:200,mobile:false});
    sr.reveal(`.gallery_item`,{scale:0.5,interval:100});
