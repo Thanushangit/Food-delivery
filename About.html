@@ -138,9 +138,9 @@
     <!-- abous us banner  -->
 
     <section
-      class="w-full min-h-[60vh] bg-[url('https://res.cloudinary.com/thanushan/image/upload/v1747244389/about-bg_uvg6as.webp')] bg-cover bg-bottom-right flex flex-col items-center justify-center text-white"
+      class="w-full min-h-[40vh] md:min-h-[60vh] bg-[url('https://res.cloudinary.com/thanushan/image/upload/v1747244389/about-bg_uvg6as.webp')] bg-cover bg-bottom-right flex flex-col items-center justify-center text-white"
     >
-      <h1 class="font-bold text-2xl md:text-5xl">About Us</h1>
+      <h1 class="font-bold text-2xl md:text-5xl mt-10 md:mt-0">About Us</h1>
     </section>
 
     <!-- welcome section  -->
@@ -149,7 +149,9 @@
         class="container flex flex-col md:flex-row items-center gap-x-16 gap-y-10"
       >
         <!-- restaurant images  -->
-        <div class="grid grid-cols-2 overflow-hidden max-w-xl h-fit">
+        <div
+          class="service_card grid grid-cols-2 overflow-hidden max-w-xl h-fit"
+        >
           <div>
             <img
               src="https://res.cloudinary.com/thanushan/image/upload/v1747244396/restaurant-01_yk5oba.webp"
@@ -159,7 +161,9 @@
             />
           </div>
 
-          <div class="flex items-center sm:justify-end justify-center">
+          <div
+            class="service_card flex items-center sm:justify-end justify-center"
+          >
             <img
               src="https://res.cloudinary.com/thanushan/image/upload/v1747244387/restaurant-02_hdhegc.webp"
               alt="restaurant-02"
@@ -168,7 +172,9 @@
             />
           </div>
 
-          <div class="flex items-end md:justify-end justify-center">
+          <div
+            class="service_card flex items-end md:justify-end justify-center"
+          >
             <img
               src="https://res.cloudinary.com/thanushan/image/upload/v1747244387/restaurant-04_zoxj81.webp"
               alt="restaurant-04"
@@ -177,7 +183,7 @@
             />
           </div>
 
-          <div class="flex items-center justify-end">
+          <div class="service_card flex items-center justify-end">
             <img
               src="https://res.cloudinary.com/thanushan/image/upload/v1747244394/restaurant-03_t1tmex.webp"
               alt="restaurant-03"
@@ -189,12 +195,14 @@
         <!-- welcome content  -->
         <div class="flex flex-col">
           <div
-            class="flex flex-col md:flex-row items-center justify-center gap-x-2 gap-y-1 mb-4"
+            class="flex flex-col xl:flex-row items-center justify-center gap-x-3 gap-y-1 mb-4"
           >
-            <h1 class="font-ibm text-2xl sm:text-4xl font-semibold">
+            <h1
+              class="font-ibm text-2xl sm:text-4xl font-semibold text-center md:text-left sm:text-left"
+            >
               Welcome to the
             </h1>
-            <div>
+            <div class="flex-1">
               <div class="flex items-center gap-2" title="Welcome 😊">
                 <div>
                   <svg
@@ -243,6 +251,7 @@
           </div>
 
           <!-- buton contanier  -->
+
           <div
             class="w-full flex flex-col md:flex-row gap-x-3 gap-y-8 items-center justify-between mt-8"
           >
@@ -263,17 +272,602 @@
               <h1 class="font-bold text-6xl text-primary">6</h1>
               <div class="">
                 <p class="text-gray-500 text-xl">Popular</p>
-                <h1 class="uppercase p-0 m-0 font-semibold text-xl">master</h1>
+                <h1
+                  class="uppercase p-0 m-0 font-semibold text-xl whitespace-nowrap"
+                >
+                  master chefs
+                </h1>
               </div>
             </div>
           </div>
 
           <!-- read more button  -->
+
           <button
-            class="w-xs md:py-5 md:px-4 p-3 mx-auto border-0 bg-primary text-white font-semibold text-xl cursor-pointer mt-12 uppercase rounded duration-300 transition hover:bg-amber-600"
+            class="sm:w-xs md:py-5 md:px-4 p-3 mx-auto border-0 bg-primary text-white font-semibold text-xl cursor-pointer mt-12 uppercase rounded duration-300 transition hover:bg-amber-600"
           >
             read more
           </button>
+
+          `
+        </div>
+      </div>
+    </section>
+
+    <!-- mission section  -->
+
+    <section class="my-10 sm:my-25">
+      <div
+        class="container flex flex-col md:flex-row items-center lg:items-start justify-between gap-x-20 gap-y-10"
+      >
+        <div class="w-full md:w-1/3 flex items-center justify-center">
+          <img
+            class="w-full h-full object-center object-cover"
+            src="https://res.cloudinary.com/thanushan/image/upload/v1747325344/our-mission_wcxamm.webp"
+            alt="mission-image"
+            loading="lazy"
+          />
+        </div>
+        <div class="flex flex-col gap-3 w-full flex-1">
+          <h1 class="text-2xl md:text-4xl font-bold text-gray-800 mb-3">
+            Our mission is to <br />
+            Save your time
+          </h1>
+          <div class="space-y-4 text-lg text-gray-500">
+            <p>
+              We understand that in today's busy world, people don't always have
+              the time to cook or go out to eat. That's why we created a fast,
+              reliable, and user-friendly food delivery app that brings
+              delicious meals straight to your door. With just a few taps, you
+              can enjoy food from your favorite restaurants without the wait,
+              stress, or hassle.
+            </p>
+            <p>
+              We believe that convenience should never come at the cost of
+              quality. Our app is designed to give you both — speed and
+              satisfaction. Whether you're a student, a professional, or a
+              parent managing a busy schedule, we're here to help you save
+              valuable time and enjoy life more. Let us take care of the food,
+              so you can take care of what really matters.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- vision section  -->
+
+    <section class="my-10 sm:my-25">
+      <div
+        class="container flex flex-col md:flex-row-reverse items-center lg:items-start justify-between gap-x-20 gap-y-10"
+      >
+        <div class="w-full md:w-1/3 flex items-center justify-center">
+          <img
+            class="w-full h-full object-center object-cover"
+            src="https://res.cloudinary.com/thanushan/image/upload/v1747325344/our-vision_flyk8w.webp"
+            alt="mission-image"
+            loading="lazy"
+          />
+        </div>
+        <div class="flex flex-col gap-3 w-full flex-1">
+          <h1 class="text-2xl md:text-4xl font-bold text-gray-800 mb-3">
+            Our vision is to <br />
+            Quick meals, happy life
+          </h1>
+          <div class="space-y-4 text-lg text-gray-500">
+            <p>
+              We believe that getting good food should be simple, fast, and
+              joyful. By delivering meals quickly and reliably, we aim to bring
+              more happiness and comfort into people's daily lives. No more long
+              waits, no more stressful meal planning — just tasty food,
+              delivered when you need it.
+            </p>
+            <p>
+              We see a future where everyone can enjoy their favorite meals
+              without losing time or energy. Whether it's a busy workday, a lazy
+              weekend, or a late-night craving, our app is here to make life
+              easier and more enjoyable — one quick meal at a time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- healthy food section  -->
+    <section class="my-10 sm:my-30 w-full bg-gray-100">
+      <div
+        class="container !pb-0 flex flex-col md:flex-row justify-between gap-5"
+      >
+        <!-- image content  -->
+        <div class="w-full md:w-1/2">
+          <img
+            src="https://res.cloudinary.com/thanushan/image/upload/v1747325337/girl-holding-credit-card_j5mtrz.webp"
+            alt="image"
+            loading="lazy"
+            class="w-full h-full object-center object-cover"
+          />
+        </div>
+
+        <!-- text content section  -->
+        <div class="w-full md:w-1/2 flex flex-col">
+          <div class="mb-5">
+            <p class="text-gray-400 tracking-widest uppercase">
+              Get up to 15% off
+            </p>
+            <h1 class="font-semibold text-2xl md:text-4xl font-ibm mt-3">
+              Enjoy healthy meals at 15% less
+            </h1>
+          </div>
+          <p class="text-lg text-gray-500 sm:my-10">
+            We value our loyal customers and have a special offer just for them
+            — healthy, delicious food delivered with a 15% discount. It's a
+            great way to eat well and spend less. Join our loyalty program today
+            and start saving on every order. Don't miss out!
+          </p>
+          <!-- ← button container → -->
+          <div
+            class="grid grid-cols-1 xl:grid-cols-2 sm:gap-y-12 gap-y-8 sm:mt-10 mt-5"
+          >
+            <div class="flex items-center gap-2 sm:border-r-2 text-gray-400">
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-15 h-15"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      d="M16 6.25v9.51q-.18.225-.29.49H8.29a2.5 2.5 0 0 0-4.58 0H3a1 1 0 0 1-1-1v-9a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2m6 7.11v2.89h-1.71a2.49 2.49 0 0 0-4.29-.49V7.25h2.43a1 1 0 0 1 .86.49l.91 1.51l1.23 2.05a4 4 0 0 1 .57 2.06"
+                    />
+                    <path
+                      d="M8.5 17.25a2.5 2.5 0 1 1-4.79-1a2.5 2.5 0 0 1 4.79 1m12 0a2.5 2.5 0 1 1-4.79-1q.11-.265.29-.49a2.49 2.49 0 0 1 4.29.49c.14.315.212.656.21 1m-9.5-6H6m5-3H6"
+                    />
+                  </g>
+                </svg>
+              </p>
+              <div>
+                <h1 class="font-semibold text-lg md:text-xl text-gray-700">
+                  With free delivery
+                </h1>
+                <p class="text-gray-500 whitespace-nowrap">
+                  Food will deliver the order
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 xl:px-6 text-gray-400">
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-15 h-15"
+                  viewBox="0 0 256 256"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0.5"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M232 64h-28.69l26.35-26.34a8 8 0 0 0-11.32-11.32L192 52.69V24a8 8 0 0 0-16 0v32.57a64 64 0 0 0-77.2 10.12c-40.1 39.39-70.25 133.08-73.19 142.45a16 16 0 0 0 21.26 21.26c9.37-2.94 103.18-33.13 142.47-73.21A64 64 0 0 0 199.43 80H232a8 8 0 0 0 0-16m-54.12 82c-8.94 9.12-21.25 17.8-34.85 25.73l-25.38-25.39a8 8 0 0 0-11.32 11.32l22.09 22.09c-40.87 21.19-86.32 35.42-87 35.63A8 8 0 0 0 40 216a8 8 0 0 0 .59-1.41c.29-.93 28-89.58 64-130.67l33.77 33.77a8 8 0 0 0 11.32-11.32l-33.5-33.49a48 48 0 0 1 61.7 73.12"
+                    />
+                  </g>
+                </svg>
+              </p>
+              <div>
+                <h1 class="font-semibold text-lg md:text-xl text-gray-700">
+                  Highest quality
+                </h1>
+                <p class="text-gray-500 whitespace-nowrap">
+                  Only high quality natural food
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 sm:border-r-2 text-gray-400">
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-15 h-15"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M412.717 89.012c-35.578-20.985-82.545-32.541-132.246-32.541h-40.942c-49.7 0-96.668 11.556-132.246 32.541C69.054 111.56 48 142.453 48 176v16h424v-16c0-33.547-21.054-64.44-59.283-86.988M82.8 160c14.153-40.121 80.185-71.529 156.731-71.529h40.942c76.546 0 142.578 31.408 156.731 71.529ZM48 304h424v32H48zm339.2-79.961c-24.785 0-37.77 6.125-49.227 11.529c-10.034 4.733-17.96 8.471-35.576 8.471s-25.54-3.738-35.574-8.471c-11.456-5.4-24.441-11.529-49.225-11.529s-37.769 6.125-49.225 11.529c-10.033 4.733-17.957 8.471-35.572 8.471s-25.54-3.738-35.573-8.471c-11.456-5.4-24.441-11.529-49.225-11.529v32c17.615 0 25.54 3.738 35.573 8.471c11.456 5.4 24.441 11.529 49.225 11.529s37.768-6.125 49.224-11.529c10.033-4.733 17.958-8.471 35.573-8.471s25.54 3.738 35.573 8.471c11.457 5.4 24.441 11.529 49.226 11.529s37.77-6.125 49.227-11.529c10.034-4.733 17.959-8.471 35.576-8.471s25.542 3.738 35.576 8.471c11.457 5.4 24.442 11.529 49.227 11.529v-32c-17.617 0-25.542-3.738-35.576-8.471c-11.46-5.404-24.445-11.529-49.227-11.529M48 448a24.03 24.03 0 0 0 24 24h376a24.03 24.03 0 0 0 24-24v-80H48Zm32-48h360v40H80Z"
+                  />
+                </svg>
+              </p>
+              <div>
+                <h1 class="font-semibold text-lg md:text-xl text-gray-700">
+                  A varied menu
+                </h1>
+                <p class="text-gray-500 whitespace-nowrap">
+                  More than 100 ready meals
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 xl:px-6 text-gray-400">
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-15 h-15"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="m13 12.175l2.25 2.25q.275.275.275.688t-.275.712q-.3.3-.712.3t-.713-.3L11.3 13.3q-.15-.15-.225-.337T11 12.575V9q0-.425.288-.712T12 8t.713.288T13 9zM12 6q-.425 0-.712-.288T11 5V4h2v1q0 .425-.288.713T12 6m6 6q0-.425.288-.712T19 11h1v2h-1q-.425 0-.712-.288T18 12m-6 6q.425 0 .713.288T13 19v1h-2v-1q0-.425.288-.712T12 18m-6-6q0 .425-.288.713T5 13H4v-2h1q.425 0 .713.288T6 12m6 10q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m8-10q0-3.35-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20t5.675-2.325T20 12m-8 0"
+                  />
+                </svg>
+              </p>
+              <div>
+                <h1 class="font-semibold text-lg md:text-xl text-gray-700">
+                  Save your time
+                </h1>
+                <p class="text-gray-500 whitespace-nowrap">
+                  Now save up to 2 hours a day
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="w-full sm:w-56 md:py-5 md:px-4 p-3 border-0 bg-primary text-white font-semibold text-xl cursor-pointer mt-15 uppercase rounded duration-300 transition hover:bg-amber-600"
+          >
+            Order your food
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ← services section → -->
+    <section class="my-10 sm:my-30 w-full bg-[#f9f6f2]">
+      <div class="container md:!pb-0 flex items-center justify-start gap-20">
+        <!-- ← text content → -->
+        <div class="w-full lg:w-1/2 grid grid-cols-2 gap-5 md:gap-10">
+          <div
+            class="py-2 px-4 md:py-4 md:px-6 flex items-center justify-center gap-3 bg-gray-50 rounded text-gray-900"
+          >
+            <h1 class="text-2xl md:text-3xl font-semibold text-center">
+              Services show <br />
+              good taste.
+            </h1>
+          </div>
+          <div
+            class="py-2 px-4 md:py-4 md:px-6 flex flex-col md:flex-row items-center justify-center gap-x-4 gap-y-2 bg-gray-50 rounded text-gray-900"
+          >
+            <h1 class="text-3xl sm:text-6xl font-bold text-primary">586</h1>
+            <p class="text-lg text-gray-600 text-center">
+              Satisfied <br />Customers
+            </p>
+          </div>
+          <div
+            class="py-2 px-4 md:py-4 md:px-6 flex flex-col md:flex-row items-center justify-center gap-x-4 gap-y-2 bg-gray-50 rounded text-gray-900"
+          >
+            <h1 class="text-3xl sm:text-6xl font-bold text-primary">06</h1>
+            <p class="text-lg text-gray-600 text-center">
+              Best <br />Restaurants
+            </p>
+          </div>
+          <div
+            class="py-2 px-4 md:py-4 md:px-6 flex flex-col md:flex-row items-center justify-center gap-x-4 gap-y-2 bg-gray-50 rounded text-gray-900"
+          >
+            <h1
+              class="text-3xl sm:text-6xl font-bold text-primary flex items-center justify-center"
+            >
+              2 <sup>K+</sup>
+            </h1>
+            <p class="text-lg text-gray-600 text-center">
+              Food <br />Deliveried
+            </p>
+          </div>
+        </div>
+
+        <!-- ← image content → -->
+        <div class="hidden lg:flex justify-end items-center md:w-1/2 mx-auto">
+          <div
+            class="md:w-[450px] md:h-[450px] w-64 h-64 rounded-full shadow mx-auto flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="https://res.cloudinary.com/thanushan/image/upload/v1747325320/surprise-girl_xbnpim.webp"
+              alt="image"
+              loading="lazy"
+              class="mt-15 mr-25 mx-auto object-bottom object-contain transform scale-130"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ← our team  → -->
+
+    <section class="my-10 sm:my-30 w-full">
+      <div class="container flex flex-col items-center justify-center">
+        <h1 class="font-ibm text-2xl md:text-4xl font-semibold sm:mb-3">
+          Meet Our Team
+        </h1>
+
+        <!-- ← team members container → -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10 w-full mt-10"
+        >
+          <div
+            class="border-2 border-gray-300 p-5 flex flex-col items-start hover:border-primary duration-300 transition hover:cursor-pointer transform hover:scale-105"
+          >
+            <div class="h-full w-full xl:w-64 xl:h-64 overflow-hidden">
+              <img
+                src="https://res.cloudinary.com/thanushan/image/upload/v1747325338/co-founder_y7kqkr.webp"
+                alt="co-founder"
+                loading="lazy"
+                class="object-cover object-center h-full w-full rounded"
+              />
+            </div>
+            <h1 class="font-semibold text-2xl text-gray-800 mt-3">Aarav Sen</h1>
+            <p class="text-lg text-gray-600">Co-Founder</p>
+            <!-- ← social icon → -->
+            <div class="flex items-center justify-center gap-5 mt-5">
+              <a
+                title="facebook"
+                href=""
+                class="flex items-center justify-center h-10 w-10 p-2 rounded-full bg-gray-300 text-gray-600 text-lg hover:bg-[#1877f7] hover:text-white duration-300 transition-all"
+                ><i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                title="twitter"
+                href=""
+                class="flex items-center justify-center h-10 w-10 p-2 rounded-full bg-gray-300 text-gray-600 text-lg hover:bg-[#01a1f7] hover:text-white duration-300 transition-all"
+                ><i class="ri-twitter-fill"></i>
+              </a>
+              <a
+                title="instagram"
+                href=""
+                class="flex items-center justify-center h-10 w-10 p-2 rounded-full bg-gray-300 text-gray-600 text-lg hover:text-pink-500 duration-300 transition-all"
+                ><i class="ri-instagram-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="border-2 border-gray-300 p-5 flex flex-col items-start hover:border-primary duration-300 transition hover:cursor-pointer transform hover:scale-105"
+          >
+            <div class="h-full w-full xl:w-64 xl:h-64 overflow-hidden">
+              <img
+                src="https://res.cloudinary.com/thanushan/image/upload/v1747325337/founder_wqpihf.webp"
+                alt="Founder"
+                loading="lazy"
+                class="object-cover object-center h-full w-full rounded"
+              />
+            </div>
+            <h1 class="font-semibold text-2xl text-gray-800 mt-3">
+              Anaya Rajan
+            </h1>
+            <p class="text-lg text-gray-600">Founder</p>
+            <!-- ← social icon → -->
+            <div class="flex items-center justify-center gap-5 mt-5">
+              <a
+                title="facebook"
+                href=""
+                class="flex items-center justify-center h-10 w-10 p-2 rounded-full bg-gray-300 text-gray-600 text-lg hover:bg-[#1877f7] hover:text-white duration-300 transition-all"
+                ><i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                title="twitter"
+                href=""
+                class="flex items-center justify-center h-10 w-10 p-2 rounded-full bg-gray-300 text-gray-600 text-lg hover:bg-[#01a1f7] hover:text-white duration-300 transition-all"
+                ><i class="ri-twitter-fill"></i>
+              </a>
+              <a
+                title="instagram"
+                href=""
+                class="flex items-center justify-center h-10 w-10 p-2 rounded-full bg-gray-300 text-gray-600 text-lg hover:text-pink-500 duration-300 transition-all"
+                ><i class="ri-instagram-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="border-2 border-gray-300 p-5 flex flex-col items-start hover:border-primary duration-300 transition hover:cursor-pointer transform hover:scale-105"
+          >
+            <div class="h-full w-full xl:w-64 xl:h-64 overflow-hidden">
+              <img
+                src="https://res.cloudinary.com/thanushan/image/upload/v1747325334/manager_gy7g1b.webp"
+                alt="Manager"
+                loading="lazy"
+                class="object-cover object-center h-full w-full rounded"
+              />
+            </div>
+            <h1 class="font-semibold text-2xl text-gray-800 mt-3">
+              Kavin Kumar
+            </h1>
+            <p class="text-lg text-gray-600">Manager</p>
+            <!-- ← social icon → -->
+            <div class="flex items-center justify-center gap-5 mt-5">
+              <a
+                title="facebook"
+                href=""
+                class="flex items-center justify-center h-10 w-10 p-2 rounded-full bg-gray-300 text-gray-600 text-lg hover:bg-[#1877f7] hover:text-white duration-300 transition-all"
+                ><i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                title="twitter"
+                href=""
+                class="flex items-center justify-center h-10 w-10 p-2 rounded-full bg-gray-300 text-gray-600 text-lg hover:bg-[#01a1f7] hover:text-white duration-300 transition-all"
+                ><i class="ri-twitter-fill"></i>
+              </a>
+              <a
+                title="instagram"
+                href=""
+                class="flex items-center justify-center h-10 w-10 p-2 rounded-full bg-gray-300 text-gray-600 text-lg hover:text-pink-500 duration-300 transition-all"
+                ><i class="ri-instagram-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="border-2 border-gray-300 p-5 flex flex-col items-start hover:border-primary duration-300 transition hover:cursor-pointer transform hover:scale-105"
+          >
+            <div class="h-full w-full xl:w-64 xl:h-64 overflow-hidden">
+              <img
+                src="https://res.cloudinary.com/thanushan/image/upload/v1747325344/marketing-manager_bkaljt.webp"
+                alt="Marketing Executive"
+                loading="lazy"
+                class="object-cover object-center h-full w-full rounded"
+              />
+            </div>
+            <h1 class="font-semibold text-2xl text-gray-800 mt-3">
+              Nilan Fernando
+            </h1>
+            <p class="text-lg text-gray-600">Marketing Executive</p>
+            <!-- ← social icon → -->
+            <div class="flex items-center justify-center gap-5 mt-5">
+              <a
+                title="facebook"
+                href=""
+                class="flex items-center justify-center h-10 w-10 p-2 rounded-full bg-gray-300 text-gray-600 text-lg hover:bg-[#1877f7] hover:text-white duration-300 transition-all"
+                ><i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                title="twitter"
+                href=""
+                class="flex items-center justify-center h-10 w-10 p-2 rounded-full bg-gray-300 text-gray-600 text-lg hover:bg-[#01a1f7] hover:text-white duration-300 transition-all"
+                ><i class="ri-twitter-fill"></i>
+              </a>
+              <a
+                title="instagram"
+                href=""
+                class="flex items-center justify-center h-10 w-10 p-2 rounded-full bg-gray-300 text-gray-600 text-lg hover:text-pink-500 duration-300 transition-all"
+                ><i class="ri-instagram-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ← our branches → -->
+    <section class="my-10 sm:my-30 w-full bg-[#83d6ea]">
+      <h1
+        class="text-2xl md:text-4xl my-3 font-semibold font-ibm text-gray-800 text-center pt-3"
+      >
+        Our Branches
+      </h1>
+      <div
+        class="container md:!py-8 flex flex-col md:flex-row items-center justify-between gap-10"
+      >
+        <div class="w-full md:w-1/2">
+          <img
+            title="our branches"
+            src="https://res.cloudinary.com/thanushan/image/upload/v1747325322/map_vbsljj.webp"
+            alt="map"
+            class="object-center object-cover cursor-pointer"
+            loading="lazy"
+          />
+        </div>
+
+        <div
+          class="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16"
+        >
+          <div class="flex flex-col items-center gap-1 bg-gray-300">
+            <div class="h-36 w-full overflow-hidden">
+              <img
+                src="https://res.cloudinary.com/thanushan/image/upload/v1747325345/map-restaurant-01_cupo2i.webp"
+                alt="Colombo-restaurant"
+                loading="lazy"
+                class="object-center object-cover w-full h-full rounded"
+              />
+            </div>
+            <a
+              title="visit the restaurant"
+              href="https://maps.app.goo.gl/m5voeJBFZF96PASr9"
+              target="_blank"
+              class="text-3xl text-primary hover:cursor-pointer hover:text-red-600 transition duration-300"
+              ><i class="ri-map-pin-line"></i
+            ></a>
+            <h1 class="text-center text-lg text-gray-700 p-1">
+              5th Floor, 243 Galle Road, Colombo 03, Western Province (WP),
+              00300
+            </h1>
+            <p class="text-red-400 font-semibold p-1">011-2563562</p>
+          </div>
+
+          <div class="flex flex-col items-center gap-1 bg-gray-300">
+            <div class="h-36 w-full overflow-hidden">
+              <img
+                src="https://res.cloudinary.com/thanushan/image/upload/v1747325340/map-restaurant-02_ezz3if.webp"
+                alt="vasaviilan-restaurant"
+                loading="lazy"
+                class="object-center object-cover w-full h-full rounded"
+              />
+            </div>
+            <a
+              title="visit the restaurant"
+              href="https://maps.app.goo.gl/YHggXC1i1b76xicn8"
+              target="_blank"
+              class="text-3xl text-primary hover:cursor-pointer hover:text-red-600 transition duration-300"
+              ><i class="ri-map-pin-line"></i
+            ></a>
+            <h1 class="text-center text-lg text-gray-700 p-1">
+              88 Vasavilan Road,Near Central Market Jaffna, Northern Province
+              (NP), 40000
+            </h1>
+            <p class="text-red-400 font-semibold p-1">021-2563568</p>
+          </div>
+
+          <div class="flex flex-col items-center gap-1 bg-gray-300">
+            <div class="h-36 w-full overflow-hidden">
+              <img
+                src="https://res.cloudinary.com/thanushan/image/upload/v1747325341/map-restaurant-03_tig5uy.webp"
+                alt="Anuradhapura-restaurant"
+                loading="lazy"
+                class="object-center object-cover w-full h-full rounded"
+              />
+            </div>
+            <a
+              title="visit the restaurant"
+              href="https://maps.app.goo.gl/m5voeJBFZF96PASr9"
+              target="_blank"
+              class="text-3xl text-primary hover:cursor-pointer hover:text-red-600 transition duration-300"
+              ><i class="ri-map-pin-line"></i
+            ></a>
+            <h1 class="text-center text-lg text-gray-700 p-1">
+              56 Mihindu Mawatha, Anuradhapura, North Central Province (NCP),
+              50000
+            </h1>
+            <p class="text-red-400 font-semibold p-1">025-2563563</p>
+          </div>
+
+          <div class="flex flex-col items-center gap-1 bg-gray-300">
+            <div class="h-36 w-full overflow-hidden">
+              <img
+                src="https://res.cloudinary.com/thanushan/image/upload/v1747325337/map-restaurant-04_usylge.webp"
+                alt="Ampara-restaurant"
+                loading="lazy"
+                class="object-center object-cover w-full h-full rounded"
+              />
+            </div>
+            <a
+              title="visit the restaurant"
+              href="https://maps.app.goo.gl/m5voeJBFZF96PASr9"
+              target="_blank"
+              class="text-3xl text-primary hover:cursor-pointer hover:text-red-600 transition duration-300"
+              ><i class="ri-map-pin-line"></i
+            ></a>
+            <h1 class="text-center text-lg text-gray-700 p-1">
+              102 Main Street,Opposite Ampara General Hospital Ampara, Eastern
+              Province (EP), 32000
+            </h1>
+            <p class="text-red-400 font-semibold p-1">063-2563569</p>
+          </div>
         </div>
       </div>
     </section>
