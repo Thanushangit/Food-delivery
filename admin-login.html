@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google SEO tags -->
+    <meta
+      property="og:title"
+      content="Platezy - Smart & Speedy Food Delivery"
+    />
+    <meta
+      property="og:description"
+      content="Craving something delicious? Platezy connects you to your favorite local restaurants with fast, reliable delivery - anytime, anywhere."
+    />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/thanushan/image/upload/v1747016348/meta-image_a0r2fx.webp"
+    />
+    <!-- remix icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fontawesome icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css"
+      integrity="sha512-GmZYQ9SKTnOea030Tbiat0Y+jhnYLIpsGAe6QTnToi8hI2nNbVMETHeK4wm4MuYMQdrc38x+sX77+kVD01eNsQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- output.css link  -->
+    <link rel="stylesheet" href="./output.css" />
+
+    <!-- favicon link  -->
+    <link
+      rel="shortcut icon"
+      href="https://res.cloudinary.com/thanushan/image/upload/v1747016796/logo_sdesiz.webp"
+      type="image/x-icon"
+    />
+
+    <!-- script tag for the animation  -->
+    <script src="./scrollreveal.min.js"></script>
+
+    <!-- Title of the app -->
+    <title>Platezy</title>
+  </head>
+  <body>
+    <!-- header part -->
+    <header class="bg-[#232736] w-full text-white fixed top-0 left-0 z-50">
+      <nav class="container flex items-center justify-between">
+        <!-- logo part -->
+        <div class="flex items-center gap-2" title="Welcome 😊">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <!-- Icon from Huge Icons by Hugeicons - undefined -->
+              <path
+                fill="none"
+                class="text-primary"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="m18.5 3.002l-3.44 3.44a1.5 1.5 0 0 0 0 2.12l.69.69M22 6.502l-3.44 3.44a1.5 1.5 0 0 1-2.12 0l-.69-.69m0 0L4 21.002M20 4.999l-2.5 2.5M7.99 8.99c-1.195 1.194-2.833 1.493-4.326 0S1.388 4.778 2.582 3.583C3.777 2.39 6.496 3.172 7.99 4.665s1.195 3.13 0 4.325m0 0L20 21.001M9.205 2.397A10 10 0 0 1 12 2c1.152 0 2.258.195 3.288.553M2.049 11Q2 11.494 2 12c0 2.032.606 3.922 1.647 5.5m4.126 3.565c1.284.6 2.716.935 4.227.935a10 10 0 0 0 4.262-.951m4.09-3.549A9.95 9.95 0 0 0 22 12q-.002-.868-.143-1.696"
+                color="currentColor"
+              />
+            </svg>
+          </div>
+          <a href=""
+            ><h1 class="font-ibm text-2xl sm:text-4xl font-semibold">
+              Plate <span class="text-primary">zy</span>
+            </h1></a
+          >
+        </div>
+
+        <h1 class="text-2xl md:text-3xl text-primary font-ibm">Admin Page</h1>
+      </nav>
+    </header>
+    <section
+      class="min-h-screen w-screen bg-[url('https://res.cloudinary.com/thanushan/image/upload/v1747127574/login-bg_zugbou.jpg')] bg-center bg-cover flex flex-col justify-center items-center"
+    >
+      <div class="container max-w-4xl">
+        <!-- for the login details input form  -->
+        <div
+          class="relative w-full flex flex-col p-6 gap-1 bg-[#383333] rounded-2xl"
+        >
+          <h1 class="text-center font-semibold text-2xl font-ibm text-gray-200">
+            Login
+          </h1>
+
+          <form action="" class="w-full">
+            <div class="mb-2 w-full">
+              <label for="email">
+                <p class="text-gray-300 mb-1">Email</p>
+                <input
+                  class="outline-0 py-2 px-4 bg-gray-200 rounded w-full"
+                  type="email"
+                  placeholder="Enter your email"
+                  id="email"
+                  name="email"
+                  
+                />
+              </label>
+            </div>
+            <div class="mb-2 w-full">
+              <label for="password">
+                <p class="text-gray-300 mb-1">Password</p>
+                <input
+                  class="outline-0 py-2 px-4 bg-gray-200 rounded w-full"
+                  type="password"
+                  placeholder="Enter your password"
+                  id="password"
+                  name="password"
+                  
+                />
+              </label>
+            </div>
+            <div class="w-full flex justify-center">
+              <button
+              type="submit"
+                title="sign in"
+                class="w-full sm:w-1/2 py-3 text-center bg-primary cursor-pointer hover:bg-amber-600 duration-300 transition text-white font-semibold rounded mt-5"
+              >
+                <a href="./admin.html">Sign In</a>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <p class="text-white md:mt-10">
+        copyright &copy; 2025. Powered by
+        <span
+          title="source code"
+          class="hover:text-gray-200 transition duration-200 hover:underline underline-offset-4"
+          ><a
+            target="_blank"
+            href="https://github.com/Thanushangit/Food-delivery.git"
+            >J'boys.</a
+          ></span
+        >
+      </p>
+    </section>
+
+    <!-- my external js link -->
+    <script src="./main.js"></script>
+  </body>
+</html>

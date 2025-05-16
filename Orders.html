@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google SEO tags -->
+    <meta
+      property="og:title"
+      content="Platezy - Smart & Speedy Food Delivery"
+    />
+    <meta
+      property="og:description"
+      content="Craving something delicious? Platezy connects you to your favorite local restaurants with fast, reliable delivery - anytime, anywhere."
+    />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/thanushan/image/upload/v1747016348/meta-image_a0r2fx.webp"
+    />
+    <!-- remix icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fontawesome icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css"
+      integrity="sha512-GmZYQ9SKTnOea030Tbiat0Y+jhnYLIpsGAe6QTnToi8hI2nNbVMETHeK4wm4MuYMQdrc38x+sX77+kVD01eNsQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- output.css link  -->
+    <link rel="stylesheet" href="./output.css" />
+
+    <!-- favicon link  -->
+    <link
+      rel="shortcut icon"
+      href="https://res.cloudinary.com/thanushan/image/upload/v1747016796/logo_sdesiz.webp"
+      type="image/x-icon"
+    />
+
+    <!-- swiper  -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- script tag for the animation  -->
+    <script src="./scrollreveal.min.js"></script>
+
+    <!-- Title of the app -->
+    <title>Platezy</title>
+  </head>
+  <body>
+    <!-- header part -->
+    <header class="bg-[#232736] w-full text-white fixed top-0 left-0 z-50">
+      <nav class="container flex items-center justify-between">
+        <!-- logo part -->
+        <div class="flex items-center gap-2" title="Welcome 😊">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <!-- Icon from Huge Icons by Hugeicons - undefined -->
+              <path
+                fill="none"
+                class="text-primary"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="m18.5 3.002l-3.44 3.44a1.5 1.5 0 0 0 0 2.12l.69.69M22 6.502l-3.44 3.44a1.5 1.5 0 0 1-2.12 0l-.69-.69m0 0L4 21.002M20 4.999l-2.5 2.5M7.99 8.99c-1.195 1.194-2.833 1.493-4.326 0S1.388 4.778 2.582 3.583C3.777 2.39 6.496 3.172 7.99 4.665s1.195 3.13 0 4.325m0 0L20 21.001M9.205 2.397A10 10 0 0 1 12 2c1.152 0 2.258.195 3.288.553M2.049 11Q2 11.494 2 12c0 2.032.606 3.922 1.647 5.5m4.126 3.565c1.284.6 2.716.935 4.227.935a10 10 0 0 0 4.262-.951m4.09-3.549A9.95 9.95 0 0 0 22 12q-.002-.868-.143-1.696"
+                color="currentColor"
+              />
+            </svg>
+          </div>
+          <a href="#"
+            ><h1 class="font-ibm text-2xl sm:text-4xl font-semibold">
+              Plate <span class="text-primary">zy</span>
+            </h1></a
+          >
+        </div>
+
+        <!-- navigate links -->
+        <div
+          id="slildermenu"
+          class="absolute md:static md:min-h-fit w-full md:w-fit top-0 left-[-100%] bg-[#232736] min-h-[100vh] duration-300 overflow-hidden"
+        >
+          <ul
+            class="min-h-[100vh] md:min-h-fit flex flex-col md:flex-row items-center justify-center gap-8 font-semibold text-xl"
+          >
+            <li
+              id="nav-link"
+              title="click here"
+              class="cursor-pointer hover:text-primary duration-200"
+            >
+              <a href="admin.html">Home</a>
+            </li>
+            <li
+              id="nav-link"
+              title="click here"
+              class="cursor-pointer hover:text-primary duration-200 text-primary"
+            >
+              <a href="Orders.html">Orders</a>
+            </li>
+
+            <li
+              id="nav-link"
+              title="click here"
+              class="cursor-pointer hover:text-primary duration-200"
+            >
+              <a href="admin-login.html">Logout</a>
+            </li>
+          </ul>
+        </div>
+        <div class="z-50 md:hidden">
+          <i
+            id="menuicon"
+            class="ri-menu-fold-line text-2xl cursor-pointer"
+          ></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ← order details page → -->
+
+    <section class="my-15 sm:my-30">
+      <div class="container text-left overflow-x-scroll scroll-smooth">
+        <table class="w-full h-full relative">
+          <thead class="sticky top-0 right-0 z-10 bg-gray-50 w-full">
+            <tr class="border-b border-b-gray-300 text-gray-600 shadow text-xl">
+              <th class="p-1  text-center w-[150px]">
+                Customer <br />
+                Name
+              </th>
+              <th class="p-1  text-center w-[250px]">
+                Customer <br />
+                Address
+              </th>
+              <th class="p-1  text-center w-[110px]">
+                Customer <br />
+                Tel
+              </th>
+              <th class="p-1  text-center">Food <br />Details</th>
+              <th class="p-1  text-center">Total <br />Amount</th>
+              <th class="p-1  text-center w-[180px]">
+                Order <br />Status
+              </th>
+              <th class="p-1  text-center w-[100px]">Action</th>
+            </tr>
+          </thead>
+
+          <tbody class="space-y-10">
+            <tr
+              class="border-b border-b-gray-300 text-gray-600 shadow mb-10 text-sm md:text-lg"
+            >
+              <td class="px-1 py-3">sinnarasa thanushan</td>
+              <td class="px-1 py-3">
+                punnalaikkadduvan north, chunnakam,jaffna punnalaikkadduvan
+                north, chunnakam,jaffna
+              </td>
+              <td class="px-1 py-3">0764867457</td>
+              <td class="px-1 py-3">
+                <p>Pittu-<span>01</span></p>
+                <p>veg rice-<span>05</span></p>
+                <p>kottu rotti chicken-<span>01</span></p>
+                <p>biriyani-<span>01</span></p>
+              </td>
+              <td class="px-1 py-3">Rs:-8546.00</td>
+              <td class="px-1 py-3">
+                <div class="flex flex-col gap-3">
+                  <div class="flex items-center gap-2">
+                    <input
+                      type="radio"
+                      name="order-status-01"
+                      value="On-the-way"
+                      id="On-the-way"
+                      checked
+                    />
+                    <label for="On-the-way">On-the-way</label>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <input
+                      type="radio"
+                      name="order-status-01"
+                      value="order-canceled"
+                      id="order-canceled"
+                    />
+                    <label for="order-canceled">Order-canceled</label>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <input
+                      type="radio"
+                      name="order-status-01"
+                      value="order-delivered"
+                      id="order-delivered"
+                    />
+                    <label for="order-delivered">Order-delivered</label>
+                  </div>
+                </div>
+              </td>
+              <td class="px-1 py-3">
+                <button
+                  class="py-2 px-6 bg-red-500 text-white font-semibold cursor-pointer transistion duration-300 hover:bg-red-700 rounded"
+                >
+                  Remove
+                </button>
+              </td>
+            </tr>
+
+            <tr
+              class="border-b border-b-gray-300 text-gray-600 shadow mb-10 text-sm md:text-lg"
+            >
+              <td class="px-1 py-3">sinnarasa thanushan</td>
+              <td class="px-1 py-3">
+                punnalaikkadduvan north, chunnakam,jaffna punnalaikkadduvan
+                north, chunnakam,jaffna
+              </td>
+              <td class="px-1 py-3">0764867457</td>
+              <td class="px-1 py-3">
+                <p>Pittu-<span>01</span></p>
+                <p>veg rice-<span>05</span></p>
+                <p>kottu rotti chicken-<span>01</span></p>
+                <p>biriyani-<span>01</span></p>
+              </td>
+              <td class="px-1 py-3">Rs:-8546.00</td>
+              <td class="px-1 py-3">
+                <div class="flex flex-col gap-3">
+                  <div class="flex items-center gap-2">
+                    <input
+                      type="radio"
+                      name="order-status-02"
+                      value="On-the-way"
+                      id="On-the-way"
+                      checked
+                    />
+                    <label for="On-the-way">On-the-way</label>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <input
+                      type="radio"
+                      name="order-status-02"
+                      value="order-canceled"
+                      id="order-canceled"
+                    />
+                    <label for="order-canceled">Order-canceled</label>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <input
+                      type="radio"
+                      name="order-status-02"
+                      value="order-delivered"
+                      id="order-delivered"
+                    />
+                    <label for="order-delivered">Order-delivered</label>
+                  </div>
+                </div>
+              </td>
+              <td class="px-1 py-3">
+                <button
+                  class="py-2 px-6 bg-red-500 text-white font-semibold cursor-pointer transistion duration-300 hover:bg-red-700 rounded"
+                >
+                  Remove
+                </button>
+              </td>
+            </tr>
+
+            <tr
+              class="border-b border-b-gray-300 text-gray-600 shadow mb-10 text-sm md:text-lg"
+            >
+              <td class="px-1 py-3">sinnarasa thanushan</td>
+              <td class="px-1 py-3">
+                punnalaikkadduvan north, chunnakam,jaffna punnalaikkadduvan
+                north, chunnakam,jaffna
+              </td>
+              <td class="px-1 py-3">0764867457</td>
+              <td class="px-1 py-3">
+                <p>Pittu-<span>01</span></p>
+                <p>veg rice-<span>05</span></p>
+                <p>kottu rotti chicken-<span>01</span></p>
+                <p>biriyani-<span>01</span></p>
+              </td>
+              <td class="px-1 py-3">Rs:-8546.00</td>
+              <td class="px-1 py-3">
+                <div class="flex flex-col gap-3">
+                  <div class="flex items-center gap-2">
+                    <input
+                      type="radio"
+                      name="order-status-03"
+                      value="On-the-way"
+                      id="On-the-way"
+                      checked
+                    />
+                    <label for="On-the-way">On-the-way</label>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <input
+                      type="radio"
+                      name="order-status-03"
+                      value="order-canceled"
+                      id="order-canceled"
+                    />
+                    <label for="order-canceled">Order-canceled</label>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <input
+                      type="radio"
+                      name="order-status-03"
+                      value="order-delivered"
+                      id="order-delivered"
+                    />
+                    <label for="order-delivered">Order-delivered</label>
+                  </div>
+                </div>
+              </td>
+              <td class="px-1 py-3">
+                <button
+                  class="py-2 px-6 bg-red-500 text-white font-semibold cursor-pointer transistion duration-300 hover:bg-red-700 rounded"
+                >
+                  Remove
+                </button>
+              </td>
+            </tr>
+
+           
+
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>
