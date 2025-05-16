@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Google SEO tags -->
+      <meta
+        property="og:title"
+        content="Platezy - Smart & Speedy Food Delivery"
+      />
+      <meta
+        property="og:description"
+        content="Craving something delicious? Platezy connects you to your favorite local restaurants with fast, reliable delivery - anytime, anywhere."
+      />
+      <meta
+        property="og:image"
+        content="https://res.cloudinary.com/thanushan/image/upload/v1747016348/meta-image_a0r2fx.webp"
+      />
+      <!-- remix icon cdn -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+      <!-- fontawesome icon cdn -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css"
+        integrity="sha512-GmZYQ9SKTnOea030Tbiat0Y+jhnYLIpsGAe6QTnToi8hI2nNbVMETHeK4wm4MuYMQdrc38x+sX77+kVD01eNsQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+      <!-- output.css link  -->
+      <link rel="stylesheet" href="./output.css" />
+
+      <!-- favicon link  -->
+      <link
+        rel="shortcut icon"
+        href="https://res.cloudinary.com/thanushan/image/upload/v1747016796/logo_sdesiz.webp"
+        type="image/x-icon"
+      />
+
+      <!-- swiper  -->
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+
+      <!-- script tag for the animation  -->
+      <script src="./scrollreveal.min.js"></script>
+
+      <!-- Title of the app -->
+      <title>Platezy</title>
+    </head>
+    <body>
+      <!-- header part -->
+      <header class="bg-[#232736] w-full text-white fixed top-0 left-0 z-50">
+        <nav class="container flex items-center justify-between">
+          <!-- logo part -->
+          <div class="flex items-center gap-2" title="Welcome 😊">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <!-- Icon from Huge Icons by Hugeicons - undefined -->
+                <path
+                  fill="none"
+                  class="text-primary"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="m18.5 3.002l-3.44 3.44a1.5 1.5 0 0 0 0 2.12l.69.69M22 6.502l-3.44 3.44a1.5 1.5 0 0 1-2.12 0l-.69-.69m0 0L4 21.002M20 4.999l-2.5 2.5M7.99 8.99c-1.195 1.194-2.833 1.493-4.326 0S1.388 4.778 2.582 3.583C3.777 2.39 6.496 3.172 7.99 4.665s1.195 3.13 0 4.325m0 0L20 21.001M9.205 2.397A10 10 0 0 1 12 2c1.152 0 2.258.195 3.288.553M2.049 11Q2 11.494 2 12c0 2.032.606 3.922 1.647 5.5m4.126 3.565c1.284.6 2.716.935 4.227.935a10 10 0 0 0 4.262-.951m4.09-3.549A9.95 9.95 0 0 0 22 12q-.002-.868-.143-1.696"
+                  color="currentColor"
+                />
+              </svg>
+            </div>
+            <a href="#"
+              ><h1 class="font-ibm text-2xl sm:text-4xl font-semibold">
+                Plate <span class="text-primary">zy</span>
+              </h1></a
+            >
+          </div>
+
+          <!-- navigate links -->
+          <div
+            id="slildermenu"
+            class="absolute md:static md:min-h-fit w-full md:w-fit top-0 left-[-100%] bg-[#232736] min-h-[100vh] duration-300 overflow-hidden"
+          >
+            <ul
+              class="min-h-[100vh] md:min-h-fit flex flex-col md:flex-row items-center justify-center gap-8 font-semibold text-xl"
+            >
+              <li
+                id="nav-link"
+                title="click here"
+                class="cursor-pointer hover:text-primary duration-200 text-primary"
+              >
+                <a href="admin.html">Home</a>
+              </li>
+              <li
+                id="nav-link"
+                title="click here"
+                class="cursor-pointer hover:text-primary duration-200"
+              >
+                <a href="Orders.html">Orders</a>
+              </li>
+
+              <li
+                id="nav-link"
+                title="click here"
+                class="cursor-pointer hover:text-primary duration-200"
+              >
+                <a href="admin-login.html">Logout</a>
+              </li>
+            </ul>
+          </div>
+          <div class="z-50 md:hidden">
+            <i
+              id="menuicon"
+              class="ri-menu-fold-line text-2xl cursor-pointer"
+            ></i>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Populer Dishes -->
+      <section class="my-15 sm:my-15 bg-[#e9ecef]">
+        <div class="container">
+          <h1
+            class="text-2xl md:text-3xl lg:text-4xl my-8 sm:mb-8 font-bold font-ibm"
+          >
+            Populer Dishes
+          </h1>
+          <div class="grid grid-rows-1 w-full">
+            <div
+              class="grid grid-cols-2 md:grid-cols-3 mb-5 lg:grid-cols-4 xl:grid-cols-6 gap-2 md:gap-x-5 gap-y-7 md:gap-y-10"
+            >
+              <!-- item 1 -->
+              <div
+                class="dishes_item group border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative"
+                title="Taste. Smile. Repeat. 😋"
+              >
+                <div class="h-1/3 w-auto overflow-hidden relative">
+                  <img
+                    class="h-full w-full object-cover transform hover:scale-110 duration-500 transition"
+                    src="https://res.cloudinary.com/thanushan/image/upload/v1747016025/popular-01_lv4jvs.webp"
+                    alt="pasta"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="p-2 flex flex-col mb-2 h-2/3">
+                  <div class="flex flex-col">
+                    <h2 class="font-semibold text-lg font-cascadia">Pasta</h2>
+                    <h5 class="font-bold text-xl text-primary">RS:-625</h5>
+                    <p>
+                      Versatile Italian pasta made from durum wheat in various
+                      shapes.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+                >
+                  <div class="flex items-center justify-center gap-5 w-full">
+                    <button
+                      title="Delete the item"
+                      class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                    >
+                      <i class="ri-delete-bin-line"></i>
+                    </button>
+
+                    <button
+                      title="Edit the item"
+                      class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                    >
+                      <i class="ri-edit-2-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item 2 -->
+              <div
+                class="dishes_item border-1 group border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative"
+                title="Taste. Smile. Repeat. 😋"
+              >
+                <div class="h-1/3 w-auto overflow-hidden relative">
+                  <img
+                    class="h-full w-full object-cover transform hover:scale-110 duration-500 transition"
+                    src="https://res.cloudinary.com/thanushan/image/upload/v1747015973/popular-02_buleiq.webp"
+                    alt="Pizza"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="p-2 flex flex-col mb-2 h-2/3">
+                  <div class="flex flex-col">
+                    <h2 class="font-semibold text-lg font-cascadia">Pizza</h2>
+                    <h5 class="font-bold text-xl text-primary">RS:-1500</h5>
+                    <p>
+                      Italian flatbread with tomato, cheese, and assorted savory
+                      toppings.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+                >
+                  <div class="flex items-center justify-center gap-5 w-full">
+                    <button
+                      title="Delete the item"
+                      class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                    >
+                      <i class="ri-delete-bin-line"></i>
+                    </button>
+
+                    <button
+                      title="Edit the item"
+                      class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                    >
+                      <i class="ri-edit-2-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item 3 -->
+              <div
+                class="dishes_item group border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative"
+                title="Taste. Smile. Repeat. 😋"
+              >
+                <div class="h-1/3 w-auto overflow-hidden relative">
+                  <img
+                    class="h-full w-full object-cover transform hover:scale-110 duration-500 transition"
+                    src="https://res.cloudinary.com/thanushan/image/upload/v1747015972/popular-03_rruznz.webp"
+                    alt="Burger"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="p-2 flex flex-col mb-2 h-2/3">
+                  <div class="flex flex-col">
+                    <h2 class="font-semibold text-lg font-cascadia">Burger</h2>
+                    <h5 class="font-bold text-xl text-primary">RS:-1,200</h5>
+                    <p>
+                      Grilled beef patty with lettuce, tomatoes, cheese, and
+                      toasted bun.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+                >
+                  <div class="flex items-center justify-center gap-5 w-full">
+                    <button
+                      title="Delete the item"
+                      class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                    >
+                      <i class="ri-delete-bin-line"></i>
+                    </button>
+
+                    <button
+                      title="Edit the item"
+                      class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                    >
+                      <i class="ri-edit-2-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item 4 -->
+              <div
+                class="dishes_item group border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative"
+                title="Taste. Smile. Repeat. 😋"
+              >
+                <div class="h-1/3 w-auto overflow-hidden relative">
+                  <img
+                    class="h-full w-full object-cover transform hover:scale-110 duration-500 transition"
+                    src="https://res.cloudinary.com/thanushan/image/upload/v1747015973/popular-04_pcu1vx.webp"
+                    alt="Sushi"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="p-2 flex flex-col mb-2 h-2/3">
+                  <div class="flex flex-col">
+                    <h2 class="font-semibold text-lg font-cascadia">Sushi</h2>
+                    <h5 class="font-bold text-xl text-primary">RS:-2,650</h5>
+                    <p>
+                      Japanese rice dish with seafood, vegetables, and fruits.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+                >
+                  <div class="flex items-center justify-center gap-5 w-full">
+                    <button
+                      title="Delete the item"
+                      class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                    >
+                      <i class="ri-delete-bin-line"></i>
+                    </button>
+
+                    <button
+                      title="Edit the item"
+                      class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                    >
+                      <i class="ri-edit-2-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item 5 -->
+              <div
+                class="dishes_item group border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative"
+                title="Taste. Smile. Repeat. 😋"
+              >
+                <div class="h-1/3 w-auto overflow-hidden relative">
+                  <img
+                    class="h-full w-full object-cover transform hover:scale-110 duration-500 transition"
+                    src="https://res.cloudinary.com/thanushan/image/upload/v1747015973/popular-05_cbzusc.webp"
+                    alt="Tacos"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="p-2 flex flex-col mb-2 h-2/3">
+                  <div class="flex flex-col">
+                    <h2 class="font-semibold text-lg font-cascadia">Tacos</h2>
+                    <h5 class="font-bold text-xl text-primary">RS:-700</h5>
+                    <p>
+                      Mexican tortilla filled with meat, beans, cheese, and
+                      more.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+                >
+                  <div class="flex items-center justify-center gap-5 w-full">
+                    <button
+                      title="Delete the item"
+                      class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                    >
+                      <i class="ri-delete-bin-line"></i>
+                    </button>
+
+                    <button
+                      title="Edit the item"
+                      class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                    >
+                      <i class="ri-edit-2-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item 6 -->
+              <div
+                class="dishes_item group border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative"
+                title="Taste. Smile. Repeat. 😋"
+              >
+                <div class="h-1/3 w-auto overflow-hidden relative">
+                  <img
+                    class="h-full w-full object-cover transform hover:scale-110 duration-500 transition"
+                    src="https://res.cloudinary.com/thanushan/image/upload/v1747015975/popular-06_ro7jym.webp"
+                    alt="Rice"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="p-2 flex flex-col mb-2 h-2/3">
+                  <div class="flex flex-col">
+                    <h2 class="font-semibold text-lg font-cascadia">Rice</h2>
+                    <h5 class="font-bold text-xl text-primary">RS:-1,170</h5>
+                    <p>
+                      Chicken pieces coated in seasoned batter and deep-fried
+                      until crispy.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+                >
+                  <div class="flex items-center justify-center gap-5 w-full">
+                    <button
+                      title="Delete the item"
+                      class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                    >
+                      <i class="ri-delete-bin-line"></i>
+                    </button>
+
+                    <button
+                      title="Edit the item"
+                      class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                    >
+                      <i class="ri-edit-2-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item 7 -->
+              <div
+                class="dishes_item group border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative"
+                title="Taste. Smile. Repeat. 😋"
+              >
+                <div class="h-1/3 w-auto overflow-hidden relative">
+                  <img
+                    class="h-full w-full object-cover transform hover:scale-110 duration-500 transition"
+                    src="https://res.cloudinary.com/thanushan/image/upload/v1747015981/popular-07_xjuqkl.webp"
+                    alt="Steak"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="p-2 flex flex-col mb-2 h-2/3">
+                  <div class="flex flex-col">
+                    <h2 class="font-semibold text-lg font-cascadia">Steak</h2>
+                    <h5 class="font-bold text-xl text-primary">RS:-1,650</h5>
+                    <p>
+                      A cut of meat, usually beef, cooked by grilling,
+                      pan-frying, or broiling.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+                >
+                  <div class="flex items-center justify-center gap-5 w-full">
+                    <button
+                      title="Delete the item"
+                      class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                    >
+                      <i class="ri-delete-bin-line"></i>
+                    </button>
+
+                    <button
+                      title="Edit the item"
+                      class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                    >
+                      <i class="ri-edit-2-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item 8 -->
+              <div
+                class="dishes_item group border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative"
+                title="Taste. Smile. Repeat. 😋"
+              >
+                <div class="h-1/3 w-auto overflow-hidden relative">
+                  <img
+                    class="h-full w-full object-cover transform hover:scale-110 duration-500 transition"
+                    src="https://res.cloudinary.com/thanushan/image/upload/v1747015974/popular-08_ch1gdl.webp"
+                    alt="Ramen"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="p-2 flex flex-col mb-2 h-2/3">
+                  <div class="flex flex-col">
+                    <h2 class="font-semibold text-lg font-cascadia">Ramen</h2>
+                    <h5 class="font-bold text-xl text-primary">RS:-1,842</h5>
+                    <p>
+                      Japanese noodle soup with wheat noodles in meat or fish
+                      broth.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+                >
+                  <div class="flex items-center justify-center gap-5 w-full">
+                    <button
+                      title="Delete the item"
+                      class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                    >
+                      <i class="ri-delete-bin-line"></i>
+                    </button>
+
+                    <button
+                      title="Edit the item"
+                      class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                    >
+                      <i class="ri-edit-2-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item 9 -->
+              <div
+                class="dishes_item group border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative"
+                title="Taste. Smile. Repeat. 😋"
+              >
+                <div class="h-1/3 w-auto overflow-hidden relative">
+                  <img
+                    class="h-full w-full object-cover transform hover:scale-110 duration-500 transition"
+                    src="https://res.cloudinary.com/thanushan/image/upload/v1747015975/popular-09_tdfplo.webp"
+                    alt="Salad"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="p-2 flex flex-col mb-2 h-2/3">
+                  <div class="flex flex-col">
+                    <h2 class="font-semibold text-lg font-cascadia">Salad</h2>
+                    <h5 class="font-bold text-xl text-primary">RS:-3,250</h5>
+                    <p>
+                      A dish consisting of a mixture of small pieces of food,
+                      typically vegetables or fruits.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+                >
+                  <div class="flex items-center justify-center gap-5 w-full">
+                    <button
+                      title="Delete the item"
+                      class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                    >
+                      <i class="ri-delete-bin-line"></i>
+                    </button>
+
+                    <button
+                      title="Edit the item"
+                      class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                    >
+                      <i class="ri-edit-2-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item 10 -->
+              <div
+                class="dishes_item group border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative"
+                title="Taste. Smile. Repeat. 😋"
+              >
+                <div class="h-1/3 w-auto overflow-hidden relative">
+                  <img
+                    class="h-full w-full object-cover transform hover:scale-110 duration-500 transition"
+                    src="https://res.cloudinary.com/thanushan/image/upload/v1747015977/popular-10_gdsqzo.webp"
+                    alt="Biryani"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="p-2 flex flex-col mb-2 h-2/3">
+                  <div class="flex flex-col">
+                    <h2 class="font-semibold text-lg font-cascadia">Biryani</h2>
+                    <h5 class="font-bold text-xl text-primary">RS:-1,100</h5>
+                    <p>
+                      Two or more slices of bread with one or more fillings
+                      between them.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+                >
+                  <div class="flex items-center justify-center gap-5 w-full">
+                    <button
+                      title="Delete the item"
+                      class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                    >
+                      <i class="ri-delete-bin-line"></i>
+                    </button>
+
+                    <button
+                      title="Edit the item"
+                      class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                    >
+                      <i class="ri-edit-2-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item 11 -->
+              <div
+                class="dishes_item group border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative"
+                title="Taste. Smile. Repeat. 😋"
+              >
+                <div class="h-1/3 w-auto overflow-hidden relative">
+                  <img
+                    class="h-full w-full object-cover transform hover:scale-110 duration-500 transition"
+                    src="https://res.cloudinary.com/thanushan/image/upload/v1747015977/popular-11_hdyjhx.webp"
+                    alt="Lasagna"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="p-2 flex flex-col mb-2 h-2/3">
+                  <div class="flex flex-col">
+                    <h2 class="font-semibold text-lg font-cascadia">Lasagna</h2>
+                    <h5 class="font-bold text-xl text-primary">RS:-1,500</h5>
+                    <p>
+                      Italian dish with layered pasta, sauce, meat, vegetables,
+                      and cheese.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+                >
+                  <div class="flex items-center justify-center gap-5 w-full">
+                    <button
+                      title="Delete the item"
+                      class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                    >
+                      <i class="ri-delete-bin-line"></i>
+                    </button>
+
+                    <button
+                      title="Edit the item"
+                      class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                    >
+                      <i class="ri-edit-2-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item 12 -->
+              <div
+                class="dishes_item group border-1 border-gray-300 hover:shadow-2xl cursor-pointer hover:-translate-y-1 transform transition duration-300 rounded-md overflow-hidden relative"
+                title="Taste. Smile. Repeat. 😋"
+              >
+                <div class="h-1/3 w-auto overflow-hidden relative">
+                  <img
+                    class="h-full w-full object-cover transform hover:scale-110 duration-500 transition"
+                    src="https://res.cloudinary.com/thanushan/image/upload/v1747015977/popular-12_hk8b7w.webp"
+                    alt="Falafel"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="p-2 flex flex-col mb-2 h-2/3">
+                  <div class="flex flex-col">
+                    <h2 class="font-semibold text-lg font-cascadia">Falafel</h2>
+                    <h5 class="font-bold text-xl text-primary">RS:-300</h5>
+                    <p>
+                      Deep-fried ball or patty made from ground chickpeas or
+                      fava beans.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+                >
+                  <div class="flex items-center justify-center gap-5 w-full">
+                    <button
+                      title="Delete the item"
+                      class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                    >
+                      <i class="ri-delete-bin-line"></i>
+                    </button>
+
+                    <button
+                      title="Edit the item"
+                      class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                    >
+                      <i class="ri-edit-2-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="h-full w-full my-4">
+              <button
+                title="add a item"
+                class="w-20 h-20 rounded-full bg-primary hover:bg-yellow-600 flex items-center justify-center text-white text-3xl font-bold shadow-2xl mx-auto cursor-pointer transition duration-300"
+              >
+                <i class="ri-add-line"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ← breakfast section → -->
+
+      <section class="my-15 sm:my-35 bg-[#e9ecef]">
+        <div class="container my-5 md:my-10">
+          <h1
+            class="text-2xl md:text-3xl lg:text-4xl my-8 sm:mb-8 font-bold font-ibm"
+          >
+            Breakfast Foods
+          </h1>
+          <div
+            id="breakFastDiv"
+            class="food_item_container grid relative grid-cols-1 md:grid-cols-2 gap-x-2 gap-y-4 lg:gap-x-5 lg:gap-y-5"
+          >
+            <!-- item-01 -->
+            <div
+              class="food_item flex relative group items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md"
+            >
+              <div class="h-25 w-40 relative">
+                <img
+                  class="w-full h-full object-center object-cover"
+                  src="https://res.cloudinary.com/thanushan/image/upload/v1747015975/bf-1-Dosai_uko4q5.webp"
+                  alt="Dosai"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="flex flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5"
+              >
+                <h1 class="font-bold text-lg lg:text-2xl font-cascadia">
+                  Dosai
+                </h1>
+                <p>Thin, crispy rice pancake served with chutney, sambar.</p>
+                <h1 class="text-primary font-semibold">Rs:-100</h1>
+              </div>
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+              >
+                <div class="flex items-center justify-center gap-5 w-full">
+                  <button
+                    title="Delete the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                  >
+                    <i class="ri-delete-bin-line"></i>
+                  </button>
+
+                  <button
+                    title="Edit the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                  >
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item-02 -->
+            <div
+              class="food_item group relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md"
+            >
+              <div class="h-25 w-40 relative">
+                <img
+                  class="w-full h-full object-center object-cover"
+                  src="https://res.cloudinary.com/thanushan/image/upload/v1747015976/bf-2-idli_br3y7s.webp"
+                  alt="Idli"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="flex flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5"
+              >
+                <h1 class="font-bold text-lg lg:text-2xl font-cascadia">
+                  Idli
+                </h1>
+                <p>Soft steamed rice cakes, light and healthy breakfast.</p>
+                <h1 class="text-primary font-semibold">Rs:-80</h1>
+              </div>
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+              >
+                <div class="flex items-center justify-center gap-5 w-full">
+                  <button
+                    title="Delete the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                  >
+                    <i class="ri-delete-bin-line"></i>
+                  </button>
+
+                  <button
+                    title="Edit the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                  >
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item-03 -->
+            <div
+              class="food_item group relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md"
+            >
+              <div class="h-25 w-40 relative">
+                <img
+                  class="w-full h-full object-center object-cover"
+                  src="https://res.cloudinary.com/thanushan/image/upload/v1747015976/bf-3-pittu_seb7fk.webp"
+                  alt="Pittu"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="flex flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5"
+              >
+                <h1 class="font-bold text-lg lg:text-2xl font-cascadia">
+                  Pittu
+                </h1>
+                <p>Steamed rice flour with coconut, served with curry.</p>
+                <h1 class="text-primary font-semibold">Rs:-120</h1>
+              </div>
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+              >
+                <div class="flex items-center justify-center gap-5 w-full">
+                  <button
+                    title="Delete the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                  >
+                    <i class="ri-delete-bin-line"></i>
+                  </button>
+
+                  <button
+                    title="Edit the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                  >
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item-04 -->
+            <div
+              class="food_item group relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md"
+            >
+              <div class="h-25 w-40 relative">
+                <img
+                  class="w-full h-full object-center object-cover"
+                  src="https://res.cloudinary.com/thanushan/image/upload/v1747015978/bf-4-hoppers_dwfrlm.webp"
+                  alt="Hoppers"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="flex flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5"
+              >
+                <h1 class="font-bold text-lg lg:text-2xl font-cascadia">
+                  Hoppers
+                </h1>
+                <p>Fermented rice pancake, crispy edges and soft center.</p>
+                <h1 class="text-primary font-semibold">Rs:-100</h1>
+              </div>
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+              >
+                <div class="flex items-center justify-center gap-5 w-full">
+                  <button
+                    title="Delete the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                  >
+                    <i class="ri-delete-bin-line"></i>
+                  </button>
+
+                  <button
+                    title="Edit the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                  >
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item-05 -->
+            <div
+              class="food_item group relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md"
+            >
+              <div class="h-25 w-40 relative">
+                <img
+                  class="w-full h-full object-center object-cover"
+                  src="https://res.cloudinary.com/thanushan/image/upload/v1747015978/bf-5-vadai_hx9zgp.webp"
+                  alt="Vadai"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="flex flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5"
+              >
+                <h1 class="font-bold text-lg lg:text-2xl font-cascadia">
+                  Vadai
+                </h1>
+                <p>Crunchy lentil fritter, spicy and deep-fried goodness.</p>
+                <h1 class="text-primary font-semibold">Rs:-60</h1>
+              </div>
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+              >
+                <div class="flex items-center justify-center gap-5 w-full">
+                  <button
+                    title="Delete the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                  >
+                    <i class="ri-delete-bin-line"></i>
+                  </button>
+
+                  <button
+                    title="Edit the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                  >
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item-06 -->
+            <div
+              class="food_item group relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md"
+            >
+              <div class="h-25 w-40 relative">
+                <img
+                  class="w-full h-full object-center object-cover"
+                  src="https://res.cloudinary.com/thanushan/image/upload/v1747015979/bf-6-string-hoppers_ixssmk.webp"
+                  alt="String Hoppers"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="flex flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5"
+              >
+                <h1 class="font-bold text-lg lg:text-2xl font-cascadia">
+                  String Hoppers
+                </h1>
+                <p>Steamed rice noodles, often served with coconut milk.</p>
+                <h1 class="text-primary font-semibold">Rs:-100</h1>
+              </div>
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+              >
+                <div class="flex items-center justify-center gap-5 w-full">
+                  <button
+                    title="Delete the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                  >
+                    <i class="ri-delete-bin-line"></i>
+                  </button>
+
+                  <button
+                    title="Edit the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                  >
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item-07 -->
+            <div
+              class="food_item group relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md"
+            >
+              <div class="h-25 w-40 relative">
+                <img
+                  class="w-full h-full object-center object-cover"
+                  src="https://res.cloudinary.com/thanushan/image/upload/v1747015980/bf-7-roti_lajf3n.webp"
+                  alt="Roti"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="flex flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5"
+              >
+                <h1 class="font-bold text-lg lg:text-2xl font-cascadia">
+                  Roti
+                </h1>
+                <p>Coconut flatbread, eaten with lunu miris or spicy curry.</p>
+                <h1 class="text-primary font-semibold">Rs:-80</h1>
+              </div>
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+              >
+                <div class="flex items-center justify-center gap-5 w-full">
+                  <button
+                    title="Delete the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                  >
+                    <i class="ri-delete-bin-line"></i>
+                  </button>
+
+                  <button
+                    title="Edit the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                  >
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item-08 -->
+            <div
+              class="food_item group relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md"
+            >
+              <div class="h-25 w-40 relative">
+                <img
+                  class="w-full h-full object-center object-cover"
+                  src="https://res.cloudinary.com/thanushan/image/upload/v1747015979/bf-8-chapati_wskze9.webp"
+                  alt="Chapati"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="flex flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5"
+              >
+                <h1 class="font-bold text-lg lg:text-2xl font-cascadia">
+                  Chapati
+                </h1>
+                <p>Wheat flatbread, soft and warm, paired with soya curry.</p>
+                <h1 class="text-primary font-semibold">Rs:-70</h1>
+              </div>
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+              >
+                <div class="flex items-center justify-center gap-5 w-full">
+                  <button
+                    title="Delete the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                  >
+                    <i class="ri-delete-bin-line"></i>
+                  </button>
+
+                  <button
+                    title="Edit the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                  >
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="h-full w-full my-6">
+            <button
+              title="add a item"
+              class="w-20 h-20 rounded-full bg-primary hover:bg-yellow-600 flex items-center justify-center text-white text-3xl font-bold shadow-2xl mx-auto cursor-pointer transition duration-300"
+            >
+              <i class="ri-add-line"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ← lunch section → -->
+
+      <section class="my-15 sm:my-35 bg-[#e9ecef]">
+        <div class="container my-5 md:my-10">
+          <h1
+            class="text-2xl md:text-3xl lg:text-4xl my-8 sm:mb-8 font-bold font-ibm"
+          >
+            Lunch Foods
+          </h1>
+          <div
+            id="breakFastDiv"
+            class="food_item_container grid relative grid-cols-1 md:grid-cols-2 gap-x-2 gap-y-4 lg:gap-x-5 lg:gap-y-5"
+          >
+            <!-- item-01 -->
+            <div
+              class="food_item flex relative group items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md"
+            >
+              <div class="h-25 w-40 relative">
+                <img
+                  class="w-full h-full object-center object-cover"
+                  src="https://res.cloudinary.com/thanushan/image/upload/v1747016012/lu-1-_rice-curry_l2fqb5.webp"
+                  alt="Veg Rice & Curry"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="flex flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5"
+              >
+                <h1 class="font-bold text-lg lg:text-2xl font-cascadia">
+                  Veg Rice & Curry
+                </h1>
+                <p>Steamed rice with dhal, vegetables, and spicy sambol.</p>
+                <h1 class="text-primary font-semibold">Rs:-300</h1>
+              </div>
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+              >
+                <div class="flex items-center justify-center gap-5 w-full">
+                  <button
+                    title="Delete the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                  >
+                    <i class="ri-delete-bin-line"></i>
+                  </button>
+
+                  <button
+                    title="Edit the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                  >
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item-02 -->
+            <div
+              class="food_item group relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md"
+            >
+              <div class="h-25 w-40 relative">
+                <img
+                  class="w-full h-full object-center object-cover"
+                  src="https://res.cloudinary.com/thanushan/image/upload/v1747016016/lu-2-_chicken-biriyani_kk5ftn.webp"
+                  alt="Chicken Biryani"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="flex flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5"
+              >
+                <h1 class="font-bold text-lg lg:text-2xl font-cascadia">
+                  Chicken Biryani
+                </h1>
+                <p>Flavored rice with chicken, egg, salad, and spicy gravy.</p>
+                <h1 class="text-primary font-semibold">Rs:-700</h1>
+              </div>
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+              >
+                <div class="flex items-center justify-center gap-5 w-full">
+                  <button
+                    title="Delete the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                  >
+                    <i class="ri-delete-bin-line"></i>
+                  </button>
+
+                  <button
+                    title="Edit the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                  >
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item-03 -->
+            <div
+              class="food_item group relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md"
+            >
+              <div class="h-25 w-40 relative">
+                <img
+                  class="w-full h-full object-center object-cover"
+                  src="https://res.cloudinary.com/thanushan/image/upload/v1747016018/lu-3-_egg-rice_aehzq8.webp"
+                  alt="Egg Fried Rice"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="flex flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5"
+              >
+                <h1 class="font-bold text-lg lg:text-2xl font-cascadia">
+                  Egg Fried Rice
+                </h1>
+                <p>Stir-fried rice with egg, vegetables, and spicy sauce.</p>
+                <h1 class="text-primary font-semibold">Rs:-400</h1>
+              </div>
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+              >
+                <div class="flex items-center justify-center gap-5 w-full">
+                  <button
+                    title="Delete the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                  >
+                    <i class="ri-delete-bin-line"></i>
+                  </button>
+
+                  <button
+                    title="Edit the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                  >
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item-04 -->
+            <div
+              class="food_item group relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md"
+            >
+              <div class="h-25 w-40 relative">
+                <img
+                  class="w-full h-full object-center object-cover"
+                  src="https://res.cloudinary.com/thanushan/image/upload/v1747016019/lu-4-_fish-rice_epawls.webp"
+                  alt="Fish Rice & Curry"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="flex flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5"
+              >
+                <h1 class="font-bold text-lg lg:text-2xl font-cascadia">
+                  Fish Rice & Curry
+                </h1>
+                <p>Rice with fish curry, brinjal moju, beans, and sambol.</p>
+                <h1 class="text-primary font-semibold">Rs:-350</h1>
+              </div>
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+              >
+                <div class="flex items-center justify-center gap-5 w-full">
+                  <button
+                    title="Delete the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                  >
+                    <i class="ri-delete-bin-line"></i>
+                  </button>
+
+                  <button
+                    title="Edit the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                  >
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item-05 -->
+            <div
+              class="food_item group relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md"
+            >
+              <div class="h-25 w-40 relative">
+                <img
+                  class="w-full h-full object-center object-cover"
+                  src="https://res.cloudinary.com/thanushan/image/upload/v1747016020/lu-5-_rice-curryveg-biryani_uvou9i.webp"
+                  alt="Vegetable Biryani"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="flex flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5"
+              >
+                <h1 class="font-bold text-lg lg:text-2xl font-cascadia">
+                  Vegetable Biryani
+                </h1>
+                <p>Spiced rice with mixed vegetables, raita, and curry.</p>
+                <h1 class="text-primary font-semibold">Rs:-500</h1>
+              </div>
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+              >
+                <div class="flex items-center justify-center gap-5 w-full">
+                  <button
+                    title="Delete the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                  >
+                    <i class="ri-delete-bin-line"></i>
+                  </button>
+
+                  <button
+                    title="Edit the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                  >
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item-06 -->
+            <div
+              class="food_item group relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md"
+            >
+              <div class="h-25 w-40 relative">
+                <img
+                  class="w-full h-full object-center object-cover"
+                  src="https://res.cloudinary.com/thanushan/image/upload/v1747016022/lu-6-dhal-curry_hmveji.webp"
+                  alt="Dhal Curry & Rice"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="flex flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5"
+              >
+                <h1 class="font-bold text-lg lg:text-2xl font-cascadia">
+                  Dhal Curry & Rice
+                </h1>
+                <p>Steamed rice with dhal curry, salad, chilies, papadam.</p>
+                <h1 class="text-primary font-semibold">Rs:-250</h1>
+              </div>
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+              >
+                <div class="flex items-center justify-center gap-5 w-full">
+                  <button
+                    title="Delete the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                  >
+                    <i class="ri-delete-bin-line"></i>
+                  </button>
+
+                  <button
+                    title="Edit the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                  >
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item-07 -->
+            <div
+              class="food_item group relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md"
+            >
+              <div class="h-25 w-40 relative">
+                <img
+                  class="w-full h-full object-center object-cover"
+                  src="https://res.cloudinary.com/thanushan/image/upload/v1747016023/lu-7-_piitu_nlnlpt.webp"
+                  alt="Pittu with Sambol"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="flex flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5"
+              >
+                <h1 class="font-bold text-lg lg:text-2xl font-cascadia">
+                  Pittu with Sambol
+                </h1>
+                <p>Soft pittu with sambol, coconut milk, curry, and banana.</p>
+                <h1 class="text-primary font-semibold">Rs:-300</h1>
+              </div>
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+              >
+                <div class="flex items-center justify-center gap-5 w-full">
+                  <button
+                    title="Delete the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                  >
+                    <i class="ri-delete-bin-line"></i>
+                  </button>
+
+                  <button
+                    title="Edit the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                  >
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item-08 -->
+            <div
+              class="food_item group relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md"
+            >
+              <div class="h-25 w-40 relative">
+                <img
+                  class="w-full h-full object-center object-cover"
+                  src="https://res.cloudinary.com/thanushan/image/upload/v1747016023/lu-8-_seafood_trhgbv.webp"
+                  alt="Seafood Fried Rice"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="flex flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5"
+              >
+                <h1 class="font-bold text-lg lg:text-2xl font-cascadia">
+                  Seafood Fried Rice
+                </h1>
+                <p>
+                  Fried rice with prawns, cuttlefish, vegetables, egg, sauce.
+                </p>
+                <h1 class="text-primary font-semibold">Rs:-800</h1>
+              </div>
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+              >
+                <div class="flex items-center justify-center gap-5 w-full">
+                  <button
+                    title="Delete the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                  >
+                    <i class="ri-delete-bin-line"></i>
+                  </button>
+
+                  <button
+                    title="Edit the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                  >
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="h-full w-full my-6">
+            <button
+              title="add a item"
+              class="w-20 h-20 rounded-full bg-primary hover:bg-yellow-600 flex items-center justify-center text-white text-3xl font-bold shadow-2xl mx-auto cursor-pointer transition duration-300"
+            >
+              <i class="ri-add-line"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ← dinner section → -->
+
+      <section class="my-15 sm:my-35 bg-[#e9ecef]">
+        <div class="container my-5 md:my-10">
+          <h1
+            class="text-2xl md:text-3xl lg:text-4xl my-8 sm:mb-8 font-bold font-ibm"
+          >
+            Dinner Foods
+          </h1>
+          <div
+            id="breakFastDiv"
+            class="food_item_container grid relative grid-cols-1 md:grid-cols-2 gap-x-2 gap-y-4 lg:gap-x-5 lg:gap-y-5"
+          >
+            <!-- item-01 -->
+            <div
+              class="food_item flex relative group items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md"
+            >
+              <div class="h-25 w-40 relative">
+                <img
+                  class="w-full h-full object-center object-cover"
+                  src="https://res.cloudinary.com/thanushan/image/upload/v1747015982/d-1-barotta_rzoh5h.webp"
+                  alt="Parotta & Gravy"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="flex flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5"
+              >
+                <h1 class="font-bold text-lg lg:text-2xl font-cascadia">
+                  Parotta & Gravy
+                </h1>
+                <p>Soft parotta served with spicy chicken gravy and chutney.</p>
+                <h1 class="text-primary font-semibold">Rs:-150</h1>
+              </div>
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+              >
+                <div class="flex items-center justify-center gap-5 w-full">
+                  <button
+                    title="Delete the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                  >
+                    <i class="ri-delete-bin-line"></i>
+                  </button>
+
+                  <button
+                    title="Edit the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                  >
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item-02 -->
+            <div
+              class="food_item group relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md"
+            >
+              <div class="h-25 w-40 relative">
+                <img
+                  class="w-full h-full object-center object-cover"
+                  src="https://res.cloudinary.com/thanushan/image/upload/v1747015982/d-2-kottu_vaxt9o.webp"
+                  alt="Kottu Roti"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="flex flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5"
+              >
+                <h1 class="font-bold text-lg lg:text-2xl font-cascadia">
+                  Kottu Roti
+                </h1>
+                <p>
+                  Chopped roti with beef, eggs, vegetables, curry, and onions.
+                </p>
+                <h1 class="text-primary font-semibold">Rs:-700</h1>
+              </div>
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+              >
+                <div class="flex items-center justify-center gap-5 w-full">
+                  <button
+                    title="Delete the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                  >
+                    <i class="ri-delete-bin-line"></i>
+                  </button>
+
+                  <button
+                    title="Edit the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                  >
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item-03 -->
+            <div
+              class="food_item group relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md"
+            >
+              <div class="h-25 w-40 relative">
+                <img
+                  class="w-full h-full object-center object-cover"
+                  src="https://res.cloudinary.com/thanushan/image/upload/v1747015982/d-3-egg-roti_avtu5a.webp"
+                  alt="Egg Roti & Sambol"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="flex flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5"
+              >
+                <h1 class="font-bold text-lg lg:text-2xl font-cascadia">
+                  Egg Roti & Sambol
+                </h1>
+                <p>
+                  Flatbread with egg, pol sambol, and spicy curry with sauce.
+                </p>
+                <h1 class="text-primary font-semibold">Rs:-250</h1>
+              </div>
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+              >
+                <div class="flex items-center justify-center gap-5 w-full">
+                  <button
+                    title="Delete the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                  >
+                    <i class="ri-delete-bin-line"></i>
+                  </button>
+
+                  <button
+                    title="Edit the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                  >
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item-04 -->
+            <div
+              class="food_item group relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md"
+            >
+              <div class="h-25 w-40 relative">
+                <img
+                  class="w-full h-full object-center object-cover"
+                  src="https://res.cloudinary.com/thanushan/image/upload/v1747015983/d-4-egg-hoppers_rfikuk.webp"
+                  alt="Egg Hoppers"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="flex flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5"
+              >
+                <h1 class="font-bold text-lg lg:text-2xl font-cascadia">
+                  Egg Hoppers
+                </h1>
+                <p>
+                  Egg hoppers served with coconut milk gravy, sambol, and egg.
+                </p>
+                <h1 class="text-primary font-semibold">Rs:-250</h1>
+              </div>
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+              >
+                <div class="flex items-center justify-center gap-5 w-full">
+                  <button
+                    title="Delete the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                  >
+                    <i class="ri-delete-bin-line"></i>
+                  </button>
+
+                  <button
+                    title="Edit the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                  >
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item-05 -->
+            <div
+              class="food_item group relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md"
+            >
+              <div class="h-25 w-40 relative">
+                <img
+                  class="w-full h-full object-center object-cover"
+                  src="https://res.cloudinary.com/thanushan/image/upload/v1747015984/d-5-string-hoppers_bxexwc.webp"
+                  alt="String Hoppers"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="flex flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5"
+              >
+                <h1 class="font-bold text-lg lg:text-2xl font-cascadia">
+                  String Hoppers
+                </h1>
+                <p>
+                  Soft string hoppers served with spicy curry, sambol, and meat.
+                </p>
+                <h1 class="text-primary font-semibold">Rs:-300</h1>
+              </div>
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+              >
+                <div class="flex items-center justify-center gap-5 w-full">
+                  <button
+                    title="Delete the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                  >
+                    <i class="ri-delete-bin-line"></i>
+                  </button>
+
+                  <button
+                    title="Edit the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                  >
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item-06 -->
+            <div
+              class="food_item group relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md"
+            >
+              <div class="h-25 w-40 relative">
+                <img
+                  class="w-full h-full object-center object-cover"
+                  src="https://res.cloudinary.com/thanushan/image/upload/v1747016000/d-6-chicken-shawarama_hxm8yg.webp"
+                  alt="Chicken Shawarma"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="flex flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5"
+              >
+                <h1 class="font-bold text-lg lg:text-2xl font-cascadia">
+                  Chicken Shawarma
+                </h1>
+                <p>
+                  Flatbread with chicken, garlic taste sauce, veggies, and spicy
+                  filling.
+                </p>
+                <h1 class="text-primary font-semibold">Rs:-600</h1>
+              </div>
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+              >
+                <div class="flex items-center justify-center gap-5 w-full">
+                  <button
+                    title="Delete the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                  >
+                    <i class="ri-delete-bin-line"></i>
+                  </button>
+
+                  <button
+                    title="Edit the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                  >
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item-07 -->
+            <div
+              class="food_item group relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md"
+            >
+              <div class="h-25 w-40 relative">
+                <img
+                  class="w-full h-full object-center object-cover"
+                  src="https://res.cloudinary.com/thanushan/image/upload/v1747015988/d-7-noodles-egg_kjodob.webp"
+                  alt="Noodles with Egg"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="flex flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5"
+              >
+                <h1 class="font-bold text-lg lg:text-2xl font-cascadia">
+                  Noodles with Egg
+                </h1>
+                <p>
+                  Stir-fried noodles with vegetables, egg, spices, and soy
+                  sauce.
+                </p>
+                <h1 class="text-primary font-semibold">Rs:-450</h1>
+              </div>
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+              >
+                <div class="flex items-center justify-center gap-5 w-full">
+                  <button
+                    title="Delete the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                  >
+                    <i class="ri-delete-bin-line"></i>
+                  </button>
+
+                  <button
+                    title="Edit the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                  >
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item-08 -->
+            <div
+              class="food_item group relative flex items-center overflow-hidden rounded border-b-2 border-r-2 border-gray-300/80 hover:shadow-md"
+            >
+              <div class="h-25 w-40 relative">
+                <img
+                  class="w-full h-full object-center object-cover"
+                  src="https://res.cloudinary.com/thanushan/image/upload/v1747015986/d-8-chicken-rotti_c7clx0.webp"
+                  alt="Chicken Roti Rolls"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="flex flex-col py-0.5 md:py-1 px-2 sm:px-3 md:px-4 lg:px-5"
+              >
+                <h1 class="font-bold text-lg lg:text-2xl font-cascadia">
+                  Chicken Roti Rolls
+                </h1>
+                <p>
+                  Spicy chicken wrapped in roti and grilled until crispy
+                  outside.
+                </p>
+                <h1 class="text-primary font-semibold">Rs:-350</h1>
+              </div>
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-black/50 z-10 hidden group-hover:flex items-center justify-center transition-all duration-300"
+              >
+                <div class="flex items-center justify-center gap-5 w-full">
+                  <button
+                    title="Delete the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-red-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-red-700"
+                  >
+                    <i class="ri-delete-bin-line"></i>
+                  </button>
+
+                  <button
+                    title="Edit the item"
+                    class="sm:w-12 w-8 sm:h-12 h-8 rounded-full bg-green-500 flex items-center justify-center text-gray-100 hover:cursor-pointer sm:text-xl text-md hover:bg-green-700"
+                  >
+                    <i class="ri-edit-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="h-full w-full my-6">
+            <button
+              title="add a item"
+              class="w-20 h-20 rounded-full bg-primary hover:bg-yellow-600 flex items-center justify-center text-white text-3xl font-bold shadow-2xl mx-auto cursor-pointer transition duration-300"
+            >
+              <i class="ri-add-line"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ← single food details → -->
+
+      <section
+        class="min-h-screen mt-15 sm:mt-35 bg-black/40 z-50 flex flex-col items-center justify-center"
+      >
+        <div
+          class="container flex flex-col items-center justify-center max-w-3xl bg-gray-200 rounded-sm"
+        >
+          <h1
+            class="text-2xl sm:text-4xl font-semibold font-ibm my-2 text-gray-900"
+          >
+            Food Details
+          </h1>
+          <div class="flex items-center justify-center mt-2 w-32 h-32">
+            <img
+              src="https://res.cloudinary.com/thanushan/image/upload/v1747015982/d-2-kottu_vaxt9o.webp"
+              alt="image"
+              class="object-center object-cover w-full h-full"
+            />
+          </div>
+
+          <form
+            action=""
+            class="w-full h-full grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-8 mt-8 text-lg"
+          >
+            <label for="Food-Image" class="w-full">
+              <p class="text-gray-700">Food Image</p>
+              <input
+                id="Food-Image"
+                type="file"
+                accept="image/*"
+                class="py-3 outline-0 rounded bg-gray-300 w-full px-2 shadow-md"
+              />
+            </label>
+            <label for="Food-Name" class="w-full">
+              <p class="text-gray-700">Food Name</p>
+              <input
+                id="Food-Name"
+                type="text"
+                class="py-3 outline-0 rounded bg-gray-300 w-full px-2 shadow-md"
+                value="Kottu Roti"
+              />
+            </label>
+            <label for="Food-Description" class="w-full">
+              <p class="text-gray-700">Food Description</p>
+              <input
+                id="Food-Description"
+                type="text"
+                class="py-3 outline-0 rounded bg-gray-300 w-full px-2 shadow-md"
+                value="Chopped roti with beef, eggs, vegetables, curry, and onions."
+              />
+            </label>
+            <label for="Food-Price" class="w-full">
+              <p class="text-gray-700">Food Price</p>
+              <input
+                id="Food-Price"
+                type="number"
+                class="py-3 outline-0 rounded bg-gray-300 w-full px-2 shadow-md"
+                value="700"
+              />
+            </label>
+
+            <div class="col-span-2 flex items-center justify-center mb-3">
+              <button
+                title="Done"
+                type="submit"
+                class="w-full sm:w-sm py-3 px-5 bg-primary rounded outline-0 text-white font-semibold text-xl cursor-pointer transition duration-300 hover:bg-yellow-600"
+              >
+                Done
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- my external js link -->
+      <script src="./main.js"></script>
+    </body>
+  </html>
+</html>
