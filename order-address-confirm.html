@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google SEO tags -->
+    <meta
+      property="og:title"
+      content="Platezy - Smart & Speedy Food Delivery"
+    />
+    <meta
+      property="og:description"
+      content="Craving something delicious? Platezy connects you to your favorite local restaurants with fast, reliable delivery - anytime, anywhere."
+    />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/thanushan/image/upload/v1747016348/meta-image_a0r2fx.webp"
+    />
+    <!-- remix icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fontawesome icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css"
+      integrity="sha512-GmZYQ9SKTnOea030Tbiat0Y+jhnYLIpsGAe6QTnToi8hI2nNbVMETHeK4wm4MuYMQdrc38x+sX77+kVD01eNsQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- output.css link  -->
+    <link rel="stylesheet" href="./output.css" />
+
+    <!-- favicon link  -->
+    <link
+      rel="shortcut icon"
+      href="https://res.cloudinary.com/thanushan/image/upload/v1747016796/logo_sdesiz.webp"
+      type="image/x-icon"
+    />
+
+    <!-- script tag for the animation  -->
+    <script src="./scrollreveal.min.js"></script>
+
+    <!-- Title of the app -->
+    <title>Platezy</title>
+  </head>
+  <body>
+    <!-- header part -->
+    <header class="bg-[#232736] w-full text-white fixed top-0 left-0 z-50">
+      <nav class="container flex items-center justify-between">
+        <!-- logo part -->
+        <div class="flex items-center gap-2" title="Welcome 😊">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <!-- Icon from Huge Icons by Hugeicons - undefined -->
+              <path
+                fill="none"
+                class="text-primary"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="m18.5 3.002l-3.44 3.44a1.5 1.5 0 0 0 0 2.12l.69.69M22 6.502l-3.44 3.44a1.5 1.5 0 0 1-2.12 0l-.69-.69m0 0L4 21.002M20 4.999l-2.5 2.5M7.99 8.99c-1.195 1.194-2.833 1.493-4.326 0S1.388 4.778 2.582 3.583C3.777 2.39 6.496 3.172 7.99 4.665s1.195 3.13 0 4.325m0 0L20 21.001M9.205 2.397A10 10 0 0 1 12 2c1.152 0 2.258.195 3.288.553M2.049 11Q2 11.494 2 12c0 2.032.606 3.922 1.647 5.5m4.126 3.565c1.284.6 2.716.935 4.227.935a10 10 0 0 0 4.262-.951m4.09-3.549A9.95 9.95 0 0 0 22 12q-.002-.868-.143-1.696"
+                color="currentColor"
+              />
+            </svg>
+          </div>
+          <a href="#"
+            ><h1 class="font-ibm text-2xl sm:text-4xl font-semibold">
+              Plate <span class="text-primary">zy</span>
+            </h1></a
+          >
+        </div>
+
+        <!-- navigate links -->
+        <div
+          id="slildermenu"
+          class="absolute md:static md:min-h-fit w-full md:w-fit top-0 left-[-100%] bg-[#232736] min-h-[100vh] duration-300 overflow-hidden"
+        >
+          <ul
+            class="min-h-[100vh] md:min-h-fit flex flex-col md:flex-row items-center justify-center gap-8 font-semibold text-xl"
+          >
+            <li
+              id="nav-link"
+              title="click here"
+              class="cursor-pointer hover:text-primary duration-200"
+            >
+              <a href="index.html">Home</a>
+            </li>
+            <li
+              id="nav-link"
+              title="click here"
+              class="cursor-pointer hover:text-primary duration-200"
+            >
+              <a href="Myorder.html">Myorder</a>
+            </li>
+            <li
+              id="nav-link"
+              title="click here"
+              class="cursor-pointer hover:text-primary duration-200"
+            >
+              <a href="About.html">About</a>
+            </li>
+            <li
+              id="nav-link"
+              title="click here"
+              class="cursor-pointer hover:text-primary duration-200 text-primary"
+            >
+              <a href="Cart.html">Cart</a>
+            </li>
+            <li
+              id="nav-link"
+              title="click here"
+              class="cursor-pointer hover:text-primary duration-200"
+            >
+              <a href="Login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+        <div class="z-50 md:hidden">
+          <i
+            id="menuicon"
+            class="ri-menu-fold-line text-2xl cursor-pointer"
+          ></i>
+        </div>
+      </nav>
+    </header>
+
+     <section
+      class="min-h-screen  bg-[url('https://res.cloudinary.com/thanushan/image/upload/v1747127574/login-bg_zugbou.jpg')] bg-center bg-cover flex flex-col justify-center items-center mt-10 "
+    >
+      <div
+        class="container  h-full max-w-4xl flex items-center justify-center"
+      >
+        <!-- for the login details input form  -->
+        <div
+          class="relative w-full flex flex-col p-6 gap-1 bg-[#383333] rounded-2xl"
+        >
+          
+
+          <h1
+            class="text-center font-semibold text-2xl font-ibm text-gray-200 mb-5 flex items-center justify-center gap-5"
+          >
+          <a title="Back" href="./Cart.html" class="text-green-700 text-2xl font-bold hover:text-primary duration-300 transition"><i><i class="ri-arrow-left-long-line"></i></i></a>
+            Address confirmation
+          </h1>
+
+          <form
+            action=""
+            class="grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-2 w-full"
+          >
+            <div class="mb-1">
+              <label for="First-Name">
+                <p class="text-gray-300 mb-1">First Name</p>
+                <input
+                  class="outline-0 py-2 px-4 bg-gray-200 rounded w-full"
+                  type="text"
+                  placeholder="Enter your First Name"
+                  id="First-Name"
+                  name="First-Name"
+                  required
+                />
+              </label>
+            </div>
+            <div class="mb-1">
+              <label for="Last-Name">
+                <p class="text-gray-300 mb-1">Last Name</p>
+                <input
+                  class="outline-0 py-2 px-4 bg-gray-200 rounded w-full"
+                  type="text"
+                  placeholder="Enter your Last Name"
+                  id="Last-Name"
+                  name="Last-Name"
+                  required
+                />
+              </label>
+            </div>
+            
+            <div class="mb-1">
+              <label for="Mobile-Number">
+                <p class="text-gray-300 mb-1">Mobile Number</p>
+                <input
+                  class="outline-0 py-2 px-4 bg-gray-200 rounded w-full"
+                  type="tel"
+                  placeholder="Enter your Mobile Number"
+                  id="Mobile-Number"
+                  name="Mobile-Number"
+                  required
+                />
+              </label>
+            </div>
+            <div class="mb-1">
+              <label for="Landline-Number">
+                <p class="text-gray-300 mb-1">Landline Number (optionl)</p>
+                <input
+                  class="outline-0 py-2 px-4 bg-gray-200 rounded w-full"
+                  type="tel"
+                  placeholder="Enter your Landline Number"
+                  id="Landline-Number"
+                  name="Landline-Number"
+                />
+              </label>
+            </div>
+            <div class="mb-1 md:col-span-2">
+              <label for="Delivery-address">
+                <p class="text-gray-300 mb-1">Delivery Address</p>
+                <textarea
+                  id="Delivery-address"
+                  name="Delivery-address"
+                  required
+                  placeholder="Enter your Delivery Address"
+                  class="outline-0 py-2 px-4 bg-gray-200 rounded w-full resize-none"
+                  type="text"
+                  
+                ></textarea>
+              </label>
+            </div>
+            <button
+            type="submit"
+              title="Confirm"
+              class="md:col-span-2 w-full mx-auto md:max-w-xl py-2 text-center bg-green-600 cursor-pointer hover:bg-green-800 duration-300 transition text-white font-semibold rounded mt-5"
+            >
+              <a href="./order-complete.html">Confirm</a>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <p class="text-white mb-1 md:mb-0">
+        copyright &copy; 2025. Powered by
+        <span
+          title="source code"
+          class="hover:text-gray-200 transition duration-200 hover:underline underline-offset-4"
+          ><a
+            target="_blank"
+            href="https://github.com/Thanushangit/Food-delivery.git"
+            >J'boys.</a
+          ></span
+        >
+      </p>
+    </section>
+  </body>
+</html>

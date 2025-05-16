@@ -1272,6 +1272,9 @@
   .text-green-600 {
     color: var(--color-green-600);
   }
+  .text-green-700 {
+    color: var(--color-green-700);
+  }
   .text-primary {
     color: var(--color-primary);
   }
@@ -1557,6 +1560,13 @@
       }
     }
   }
+  .hover\:bg-green-600 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-green-600);
+      }
+    }
+  }
   .hover\:bg-green-700 {
     &:hover {
       @media (hover: hover) {
@@ -1734,6 +1744,11 @@
   .sm\:mt-20 {
     @media (width >= 40rem) {
       margin-top: calc(var(--spacing) * 20);
+    }
+  }
+  .sm\:mt-25 {
+    @media (width >= 40rem) {
+      margin-top: calc(var(--spacing) * 25);
     }
   }
   .sm\:mt-35 {
@@ -1960,6 +1975,11 @@
   .md\:mt-110 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * 110);
+    }
+  }
+  .md\:mb-0 {
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * 0);
     }
   }
   .md\:flex {
